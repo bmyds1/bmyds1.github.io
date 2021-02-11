@@ -8,7 +8,9 @@ const responces = [
     Responce("shiho", "ichika", "空気が、一つになっている！", "すごい… これがライブなんだね！"),
     Responce("ichika", "miku_leo", "すごい…！ いい感じ！", "みんなの実力だよ！"),
     Responce("miku_leo", "ichika", "一歌、しっかりついてきて！", "うん、任せて！"),
+    Responce("ichika", "luka", "私たちの演奏、届いてるかな…？", "ええ、きっと！"),
     Responce("luka", "ichika", "とっても素敵な演奏ね！", "みんなの応援があるからかな…"),
+    Responce("ichika", "meiko", "ここは走りすぎないように…", "ええ、その調子よ！"),
     Responce("meiko", "ichika", "みんなの歌、もっと聞かせて！", "うん、私も聞いてほしい！"),
     //saki
     Responce("saki", "honami", "私の想い、この音に乗せて！", "うん！ みんなに届くように！"),
@@ -20,6 +22,8 @@ const responces = [
     Responce("haruka", "saki", "天馬さん、いくよ！", "うん、どんどん盛り上げよう！"),
     Responce("saki", "miku_leo", "もっと盛り上げていこう！", "ふふっ、咲希が一番楽しそう！"),
     Responce("miku_leo", "saki", "咲希、楽しんでる？", "うん、すっごく楽しい！"),
+    Responce("saki", "luka", "もっと楽しんじゃおう！", "ええ、その意気よ！"),
+    Responce("luka", "saki", "さあ、その調子よ！", "はい、任せてください！"),
     Responce("saki", "meiko", "ガンガンいっちゃおう！", "迷いのない良い音ね！"),
     Responce("meiko", "saki", "まだまだこれからね！", "はい、集中集中！"),
     //honami
@@ -27,19 +31,26 @@ const responces = [
     Responce("shiho", "honami", "いい音、出てるじゃん！", "ほんと！？ ありがとう！"),
     Responce("honami", "miku_leo", "この勢いでいきます！", "穂波、カッコいいよ！"),
     Responce("miku_leo", "honami", "さすが、リズムばっちり！", "ありがとう、ミクちゃん！"),
+    Responce("honami", "luka", "いい調子ですね！", "あら、まだまだここからよ？"),
     Responce("luka", "honami", "ここが見せ場ね！", "練習の成果、見せます！"),
+    Responce("honami", "meiko", "焦らず行きましょう！", "ええ、みんなの音を聞かなくちゃね！"),
     Responce("meiko", "honami", "さっ、あともう少し！", "最後まで油断は禁物ですね！"),
     //shiho
     Responce("shiho", "miku_leo", "音が1つになっている…！", "うん、ライブの空気って最高！"),
     Responce("miku_leo", "shiho", "まだまだいけるでしょ？", "もちろん、アゲていくよ！"),
+    Responce("shiho", "luka", "カッコ悪いところ見せられない…！", "ふふ、十分カッコいいわよ？"),
+    Responce("luka", "shiho", "安定した演奏ね！", "これくらいできないとね。"),
     Responce("shiho", "meiko", "最高の演奏にしてみせる！", "ええ、その意気よ！"),
+    Responce("meiko", "shiho", "この一体感、最高ね！", "うん、私も好き…！"),
     //miku_leo
     Responce("miku_leo", "luka", "みんな、いい調子だね！", "ふふ、最後までこの調子でいきたいわね"),
+    Responce("luka", "miku_leo", "みんな、すごくいい感じね！", "いいね、もっと盛り上げていこう！"),
     //rui
     Responce("rui", "mizuki", "おや、ずいぶん協力的だね？", "昔馴染みのためだからかな？"),
     Responce("rui", "mizuki", "さて、行こうか瑞希", "オッケー！ イッツ・ショータイム！"),
     Responce("mizuki", "rui", "そろそろボクの出番かな？", "僕のことも忘れてもらっては困るよ？"),
     Responce("mizuki", "rui", "類もカワイイポーズしてみる？", "いやいや、君の株を奪うような真似は出来ないよ"),
     //luka
-    Responce("luka", "meiko", "私たちでもっとみんなを引っ張っていくわよ！", "ええ、行きましょう、MEIKO！")
+    Responce("luka", "meiko", "そろそろ私たちの見せ場かしら？", "カッコいいところ見せちゃいましょ！"),
+    Responce("meiko", "luka", "私たちでもっとみんなを引っ張っていくわよ！", "ええ、行きましょう、MEIKO！")
 ];

@@ -20,13 +20,10 @@ const getTh = (text, className = null) => {
     }
     return th;
 }
-const getCharactersByUnit = (unit) => {
-    if (unit == "all") {
-        return characters;
-    }
+const getCharactersByUnits = (units) => {
     let arr = {};
     for (let i in characters) {
-        if (characters[i].unit == unit) {
+        if (units[characters[i].unit]) {
             arr[i] = characters[i];
         }
     }
