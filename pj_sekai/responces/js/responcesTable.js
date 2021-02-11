@@ -1,28 +1,44 @@
 const initSelect = () => {
-    resetElement("select_from");
-    resetElement("select_to");
-    let select_from = document.getElementById("select_from");
-    let select_to = document.getElementById("select_to");
-    let option_all = document.createElement("option");
-    option_all.value = "all";
-    option_all.innerText = "すべて";
-    select_from.appendChild(option_all);
-    select_to.appendChild(option_all.cloneNode(true));
+    resetElement("div_from");
+    let div_from = document.getElementById("div_from");
+    resetElement("div_to");
+    let div_to = document.getElementById("div_to");
     for (let i in units) {
-        let option_unit = document.createElement("option");
-        option_unit.value = i;
-        option_unit.innerText = units[i].fullName;
-        select_from.appendChild(option_unit);
-        select_to.appendChild(option_unit.cloneNode(true));
+        let label_from = document.createElement("label");
+        let checkbox_from = document.createElement("input");
+        checkbox_from.type = "checkbox";
+        checkbox_from.name = "from";
+        checkbox_from.id = "from_" + i;
+        checkbox_from.value = i;
+        checkbox_from.checked = true;
+        label_from.appendChild(checkbox_from);
+        let spanText_from = document.createElement("span");
+        spanText_from.innerText = units[i].fullName;
+        spanText_from.style.userSelect = "none";
+        label_from.appendChild(spanText_from);
+        div_from.appendChild(label_from);
+        let label_to = document.createElement("label");
+        let checkbox_to = checkbox_from.cloneNode(true);
+        checkbox_to.name = "to";
+        checkbox_to.id = "to_" + i;
+        label_to.appendChild(checkbox_to);
+        label_to.appendChild(spanText_from.cloneNode(true));
+        div_to.appendChild(label_to);
     }
 }
 const initResponcesTable = () => {
     resetElement("table");
     let table = document.getElementById("table");
-    const unit_from = document.getElementById("select_from").value;
-    const unit_to = document.getElementById("select_to").value;
-    let characters_from = getCharactersByUnit(unit_from);
-    let characters_to = getCharactersByUnit(unit_to);
+    let units_from = {};
+    for (let c of document.getElementById("form").from) {
+        units_from[c.value] = c.checked;
+    }
+    let units_to = {};
+    for (let c of document.getElementById("form").to) {
+        units_to[c.value] = c.checked;
+    }
+    let characters_from = getCharactersByUnits(units_from);
+    let characters_to = getCharactersByUnits(units_to);
     let trHead = document.createElement("tr");
     let th00 = document.createElement("th");
     th00.innerText = "From ＼ To";
@@ -38,7 +54,6 @@ const initResponcesTable = () => {
         trHead.appendChild(thTo);
     }
     table.appendChild(trHead);
-    const cNum = Object.keys(characters_to).length;
     for (let i in characters_from) {
         let trRow = document.createElement("tr");
         let thFrom = document.createElement("th");
@@ -59,7 +74,7 @@ const initResponcesTable = () => {
                     let spanResponce = document.createElement("span");
                     spanResponce.innerText = responceTexts;
                     spanResponce.classList.add("responceText");
-                    if (cNumTmp < cNum / 2) {
+                    if (cNumTmp < 20) {
                         spanResponce.classList.add("responceTextLeft");
                     }
                     else {
