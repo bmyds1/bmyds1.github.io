@@ -1,0 +1,74 @@
+table {
+    border: solid 1px black;
+    border-collapse: collapse;
+}
+
+table tr, th, td {
+    border: solid 1px black;
+    text-align: center;
+    position: relative;
+}
+
+table th, td {
+    padding: 3px;
+}
+
+th.vertical {
+    height: 140px;
+    vertical-align: bottom;
+}
+
+th.vertical span.verticalText {
+    display: inline-block;
+    transform: rotate(-90deg);
+    width: 20px;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+td.hasResponce {
+    background-color: aqua;
+}
+
+td.noResponce {
+    background-color: lightgray;
+}
+
+td.intersection {
+    background-color: dimgray;
+}
+
+td.hasResponce span.responceText {
+    display: none;
+    position: absolute;
+    top: 25px;
+    background-color: rgba(241, 255, 180, 0.9);
+    width: 400px;
+    padding: 5px;
+    text-align: left;
+    z-index: 1;
+}
+
+td.hasResponce span.responceTextLeft {
+    left: 25px;
+}
+
+td.hasResponce span.responceTextRight {
+    right: 25px;
+}
+
+td.hasResponce:hover {
+    background-color: orange;
+}
+
+td.hasResponce:hover span.responceText {
+    display: block;
+}
+
+td.noResponce:hover {
+    background-color: gray;
+}
+
+td.intersection:hover {
+    background-color: black;
+}

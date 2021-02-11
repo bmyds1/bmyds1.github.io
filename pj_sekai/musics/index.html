@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>プロセカ 収録楽曲一覧(仮)</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="../data/constructors.js"></script>
+    <script src="../data/funcs.js"></script>
+    <script src="../data/musics.js"></script>
+    <script src="../data/characters.js"></script>
+    <script src="../data/units.js"></script>
+    <script src="../data/responces.js"></script>
+    <script src="js/musicsTable.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <h1>プロセカ 収録楽曲一覧(仮)</h1>
+    <form id="form">
+        <b>Sort: </b>
+        <select id="select_sort">
+            <option value="implemented_asc">収録日の古い順番</option>
+            <option value="implemented_desc">収録日の新しい順番</option>
+            <option value="posted_asc">投稿日の古い順番</option>
+            <option value="posted_desc">投稿日の新しい順番</option>
+        </select>
+    </form>
+    <table id="table"></table>
+    <hr />
+    <hr />
+    <b>掲載情報について</b>
+    <ul>
+        <li>投稿日…その楽曲がバージョンを問わず動画サイトに投稿された日を指します。複数サイトに投稿されている場合は最も古い日付を参照します。</li>
+        <li>収録日…その楽曲がゲーム内で遊べるようになった日を指します。</li>
+        <li>URL…本家でないもの(非公式な転載など)は掲載しない予定です。</li>
+    </ul>
+    <b>更新履歴</b>
+    <ul>
+        <li>
+            2021/02/11<br />
+            「タイムマシン」まで77曲の曲名、ボーカル、投稿日、収録日、URLを追加<br />
+            収録日、投稿日でのソートを追加
+        </li>
+    </ul>
+    <!--
+    <details>
+        <summary>過去の更新履歴</summary>
+        <ul>
+            <li></li>
+        </ul>
+    </details>
+-->
+    <hr />
+    <p>不備等ございましたら、お手数ですが下記連絡先のいずれかよりご連絡ください。</p>
+    <ul>
+        <li>Mail: bmyds1[at]gmail.com</li>
+        <li>Twitter: @bmyds1</li>
+    </ul>
+</body>
+
+</html>
