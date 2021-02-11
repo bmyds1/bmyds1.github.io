@@ -52,12 +52,12 @@ const initResponcesTable = () => {
                 tdEach.classList.add("intersection");
             }
             else {
-                let responceTexts = getResponceTexts(i, j);
-                if (responceTexts != null) {
+                let responce = getResponce(i, j);
+                if (responce != null) {
                     tdEach.innerText = "*";
                     tdEach.classList.add("hasResponce");
                     let spanResponce = document.createElement("span");
-                    spanResponce.innerText = responceTexts;
+                    spanResponce.innerText = responce.getText();
                     spanResponce.classList.add("responceText");
                     if (cNumTmp < cNum / 2) {
                         spanResponce.classList.add("responceTextLeft");
@@ -78,17 +78,13 @@ const initResponcesTable = () => {
     }
     console.log("created!");
 }
-const getResponceTexts = (from, to) => {
-    let arr = [];
+const getResponce = (from, to) => {
     for (let r of responces) {
         if (r.from == from && r.to == to) {
-            arr.push(r.text);
+            return r;
         }
     }
-    if (arr.length == 0) {
-        return null;
-    }
-    return arr.join("\n---\n");
+    return null;
 }
 const isIntersection = (from, to) => {
     return (from == to) || (from.match(/^miku/) && to.match(/^miku/));
