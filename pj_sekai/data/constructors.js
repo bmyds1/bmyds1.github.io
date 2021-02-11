@@ -8,10 +8,18 @@ const Character = (fullName, shortName, unit) => {
         fullName, shortName, unit
     };
 };
-const Responce = (from, to, fromStr, toStr) => {
+const Responce = (from, to, fromStr, toStr, option = null) => {
     return {
-        from, to, fromStr, toStr,
-        text: characters[from].shortName + "「" + fromStr + "」\n" + characters[to].shortName + "「" + toStr + "」"
+        from, to, fromStr, toStr, option,
+        getText: () => {
+            let strArr = [];
+            strArr.push(characters[from].shortName + "「" + fromStr + "」");
+            strArr.push(characters[to].shortName + "「" + toStr + "」");
+            if (option != null) {
+                strArr.push("※" + option);
+            }
+            return strArr.join("\n");
+        }
     };
 };
 const Music = (id, title, vocals, date_posted, date_implemented, urls) => {
