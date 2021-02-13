@@ -1,6 +1,9 @@
 const musics = [
     Music(1, "Tell Your World",
         [
+            Creator("kz(livetune)", "ttf")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2012, 3, 12),
@@ -11,6 +14,9 @@ const musics = [
         ]
     ),
     Music(2, "ネクストネスト",
+        [
+            Creator("さつき が てんこもり", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"])
         ],
@@ -23,6 +29,9 @@ const musics = [
     ),
     Music(3, "メルト",
         [
+            Creator("ryo", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2007, 12, 7),
@@ -33,6 +42,9 @@ const musics = [
         ]
     ),
     Music(4, "初音ミクの消失",
+        [
+            Creator("cosMo@暴走P", "ttf")
+        ],
         [
             Vocal("virtual", ["miku"])
         ],
@@ -45,6 +57,9 @@ const musics = [
     ),
     Music(5, "Blessing",
         [
+            Creator("halyosy", "ttf")
+        ],
+        [
             Vocal("virtual", ["miku", "rin", "len", "luka", "meiko", "kaito"])
         ],
         mDate(2014, 4, 11),
@@ -56,6 +71,9 @@ const musics = [
     ),
     Music(6, "alive",
         [
+            Creator("市瀬るぽ", "ttf")
+        ],
+        [
             Vocal("virtual", ["rin"])
         ],
         mDate(2020, 9, 30),
@@ -66,6 +84,9 @@ const musics = [
         ]
     ),
     Music(7, "ロキ",
+        [
+            Creator("みきとP", "ttt")
+        ],
         [
             Vocal("virtual", ["rin"]),
             Vocal("sekai", ["miku", "ichika"])
@@ -79,6 +100,10 @@ const musics = [
         ]
     ),
     Music(8, "テオ",
+        [
+            Creator("Sakurai", "tff"),
+            Creator("Omoi", "ftt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["ichika", "miku"]),
@@ -94,6 +119,10 @@ const musics = [
     ),
     Music(9, "ヒバナ -Reloaded-",
         [
+            Creator("DECO*27", "ttf"),
+            Creator("Rockwell", "fft")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["miku", "ichika"]),
             Vocal("another", ["meiko"]),
@@ -107,6 +136,9 @@ const musics = [
         ]
     ),
     Music(10, "ハッピーシンセサイザ",
+        [
+            Creator("EasyPop", "ttf")
+        ],
         [
             Vocal("virtual", ["luka", "gumi"]),
             Vocal("virtual", ["miku", "luka", "rin", "meiko"]),
@@ -124,6 +156,10 @@ const musics = [
     ),
     Music(11, "Nostalogic",
         [
+            Creator("yuukiss", "ttt"),
+            Creator("rose", "tff")
+        ],
+        [
             Vocal("virtual", ["meiko"]),
             Vocal("sekai", ["haruka", "shizuku", "meiko"]),
             Vocal("another", ["shizuku"])
@@ -135,6 +171,9 @@ const musics = [
         ]
     ),
     Music(12, "ツギハギスタッカート",
+        [
+            Creator("とあ", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["miku", "airi", "shizuku"])
@@ -148,6 +187,10 @@ const musics = [
         ]
     ),
     Music(13, "劣等上等",
+        [
+            Creator("Reol", "tff"),
+            Creator("Giga", "ftt")
+        ],
         [
             Vocal("virtual", ["rin", "len"]),
             Vocal("sekai", ["rin", "len", "kohane", "an"])
@@ -164,6 +207,9 @@ const musics = [
     ),
     Music(14, "ドクター＝ファンクビート",
         [
+            Creator("nyanyannya", "ttf")
+        ],
+        [
             Vocal("virtual", ["kaito"]),
             Vocal("sekai", ["kaito", "akito", "toya"]),
             Vocal("another", ["len"])
@@ -176,6 +222,9 @@ const musics = [
         ]
     ),
     Music(15, "フラジール",
+        [
+            Creator("ぬゆり", "ttt")
+        ],
         [
             Vocal("virtual", ["gumi"]),
             Vocal("virtual", ["len", "kaito"]),
@@ -193,6 +242,9 @@ const musics = [
     ),
     Music(16, "ブリキノダンス",
         [
+            Creator("日向電工", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["tsukasa", "rui", "len"]),
             Vocal("another", ["tsukasa"]),
@@ -206,6 +258,9 @@ const musics = [
         ]
     ),
     Music(17, "スイートマジック",
+        [
+            Creator("Junky", "ttf")
+        ],
         [
             Vocal("virtual", ["rin"]),
             Vocal("virtual", ["miku", "rin", "len", "meiko", "kaito"]),
@@ -223,6 +278,9 @@ const musics = [
     ),
     Music(18, "ぼうけんのしょがきえました！",
         [
+            Creator("じーざす", "ttf")
+        ],
+        [
             Vocal("virtual", ["rin", "len"]),
             Vocal("sekai", ["tsukasa", "emu", "rin", "len"])
         ],
@@ -234,6 +292,9 @@ const musics = [
         ]
     ),
     Music(19, "シャルル",
+        [
+            Creator("バルーン", "ttt")
+        ],
         [
             Vocal("virtual", ["flower"]),
             Vocal("sekai", ["ena", "mizuki"]),
@@ -250,6 +311,9 @@ const musics = [
     ),
     Music(20, "ハロ／ハワユ",
         [
+            Creator("ナノウ", "ttf")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["mafuyu", "ena", "miku"])
         ],
@@ -262,6 +326,9 @@ const musics = [
     ),
     Music(21, "自傷無色",
         [
+            Creator("ササノマリイ", "ttf")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["miku", "kanade", "mafuyu"])
         ],
@@ -273,6 +340,10 @@ const musics = [
         ]
     ),
     Music(22, "needLe",
+        [
+            Creator("DECO*27", "ttf"),
+            Creator("Rockwell", "fft")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["ichika", "saki", "honami", "shiho", "miku"]),
@@ -289,6 +360,9 @@ const musics = [
     ),
     Music(23, "アイドル親衛隊",
         [
+            Creator("Mitchie M", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku", "rin", "luka", "meiko"]),
             Vocal("sekai", ["minori", "haruka", "airi", "shizuku", "miku"])
         ],
@@ -300,6 +374,10 @@ const musics = [
         ]
     ),
     Music(24, "Ready Steady",
+        [
+            Creator("q*Left", "tff"),
+            Creator("Giga", "ftt")
+        ],
         [
             Vocal("virtual", ["miku", "rin", "len"]),
             Vocal("sekai", ["kohane", "an", "akito", "toya", "miku"])
@@ -313,6 +391,9 @@ const musics = [
         ]
     ),
     Music(25, "セカイはまだ始まってすらいない",
+        [
+            Creator("ピノキオピー", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["tsukasa", "emu", "nene", "rui", "miku"]),
@@ -328,6 +409,9 @@ const musics = [
         ]
     ),
     Music(26, "悔やむと書いてミライ",
+        [
+            Creator("まふまふ", "ttt")
+        ],
         [
             Vocal("sekai", ["kanade", "mafuyu", "ena", "mizuki", "miku"]),
             Vocal("another", ["kanade"]),
@@ -345,6 +429,11 @@ const musics = [
     ),
     Music(27, "セカイ",
         [
+            Creator("DECO*27", "tff"),
+            Creator("堀江昌太(kemu)", "ftf"),
+            Creator("Rockwell", "fft")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["ichika", "tsukasa", "kanade", "miku"])
         ],
@@ -356,6 +445,10 @@ const musics = [
         ]
     ),
     Music(28, "ワーワーワールド",
+        [
+            Creator("Mitchie M", "ttf"),
+            Creator("Giga", "ftt")
+        ],
         [
             Vocal("virtual", ["miku", "rin"]),
             Vocal("sekai", ["minori", "kohane", "miku"])
@@ -370,6 +463,10 @@ const musics = [
     ),
     Music(29, "アスノヨゾラ哨戒班",
         [
+            Creator("Orangestar", "ttf"),
+            Creator("Rockwell", "fft")
+        ],
+        [
             Vocal("sekai", ["ichika"])
         ],
         mDate(2014, 8, 19),
@@ -380,6 +477,10 @@ const musics = [
         ]
     ),
     Music(30, "ニア",
+        [
+            Creator("夏代孝明", "ttf"),
+            Creator("渡辺拓也", "fft")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["minori", "haruka", "miku"]),
@@ -395,6 +496,9 @@ const musics = [
     ),
     Music(31, "Just Be Friends",
         [
+            Creator("Dixie Flatline", "ttf")
+        ],
+        [
             Vocal("virtual", ["luka"]),
             Vocal("sekai", ["kohane", "an", "luka"]),
             Vocal("another", ["kohane"]),
@@ -409,6 +513,9 @@ const musics = [
     ),
     Music(32, "脱法ロック",
         [
+            Creator("Neru", "ttf")
+        ],
+        [
             Vocal("virtual", ["len"]),
             Vocal("sekai", ["tsukasa", "rui", "len"]),
             Vocal("another", ["kaito"])
@@ -421,6 +528,9 @@ const musics = [
         ]
     ),
     Music(33, "命に嫌われている。",
+        [
+            Creator("カンザキイオリ", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["kanade", "miku"]),
@@ -439,6 +549,9 @@ const musics = [
     ),
     Music(34, "ワールドイズマイン",
         [
+            Creator("ryo", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2008, 5, 31),
@@ -448,6 +561,9 @@ const musics = [
         ]
     ),
     Music(35, "ダンスロボットダンス",
+        [
+            Creator("ナユタン星人", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["emu", "nene", "miku"]),
@@ -463,6 +579,9 @@ const musics = [
     ),
     Music(36, "Hand in Hand",
         [
+            Creator("kz", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2015, 7, 8),
@@ -474,6 +593,9 @@ const musics = [
         ]
     ),
     Music(37, "夜咄ディセイヴ",
+        [
+            Creator("じん", "ttt")
+        ],
         [
             Vocal("virtual", ["ia"]),
             Vocal("sekai", ["akito", "toya", "len"]),
@@ -489,6 +611,11 @@ const musics = [
     ),
     Music(38, "Gimme×Gimme",
         [
+            Creator("q*Left", "tff"),
+            Creator("八王子P", "ftt"),
+            Creator("Giga", "ftt")
+        ],
+        [
             Vocal("virtual", ["miku", "rin"])
         ],
         mDate(2019, 10, 26),
@@ -499,6 +626,9 @@ const musics = [
         ]
     ),
     Music(39, "ビバハピ",
+        [
+            Creator("Mitchie M", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["minori", "haruka", "airi", "shizuku", "miku"]),
@@ -514,6 +644,9 @@ const musics = [
     ),
     Music(40, "ジャンキーナイトタウンオーケストラ",
         [
+            Creator("すりぃ", "ttf")
+        ],
+        [
             Vocal("virtual", ["len"])
         ],
         mDate(2019, 12, 20),
@@ -524,6 +657,9 @@ const musics = [
         ]
     ),
     Music(41, "ミラクルペイント",
+        [
+            Creator("OSTER project", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["tsukasa", "emu", "nene", "rui", "miku"])
@@ -538,6 +674,9 @@ const musics = [
     ),
     Music(42, "on the rocks",
         [
+            Creator("OSTER project", "ttt")
+        ],
+        [
             Vocal("virtual", ["meiko", "kaito"])
         ],
         mDate(2014, 7, 8),
@@ -548,6 +687,9 @@ const musics = [
         ]
     ),
     Music(43, "携帯恋話",
+        [
+            Creator("まふまふ", "ttt")
+        ],
         [
             Vocal("virtual", ["ena", "mizuki", "miku"])
         ],
@@ -561,6 +703,9 @@ const musics = [
     ),
     Music(44, "39みゅーじっく！",
         [
+            Creator("みきとP", "ttf")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2016, 6, 29),
@@ -571,6 +716,9 @@ const musics = [
         ]
     ),
     Music(45, "青く駆けろ！",
+        [
+            Creator("まらしぃ", "ttf")
+        ],
         [
             Vocal("sekai", ["miku", "ichika"])
         ],
@@ -583,6 +731,9 @@ const musics = [
         ]
     ),
     Music(46, "ステラ",
+        [
+            Creator("じん", "ttf")
+        ],
         [
             Vocal("sekai", ["ichika", "saki", "honami", "shiho", "miku"]),
             Vocal("another", ["honami"]),
@@ -597,6 +748,9 @@ const musics = [
     ),
     Music(47, "Leia - Remind",
         [
+            Creator("ゆよゆっぺ", "ttt")
+        ],
+        [
             Vocal("virtual", ["luka"]),
         ],
         mDate(2011, 1, 1),
@@ -607,6 +761,9 @@ const musics = [
         ]
     ),
     Music(48, "ジャックポットサッドガール",
+        [
+            Creator("syudou", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["kanade", "mafuyu", "ena", "mizuki", "miku"]),
@@ -621,6 +778,9 @@ const musics = [
     ),
     Music(49, "メルティランドナイトメア",
         [
+            Creator("はるまきごはん", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["miku", "minori", "haruka", "airi", "shizuku"])
         ],
@@ -633,6 +793,11 @@ const musics = [
         ]
     ),
     Music(50, "乙女解剖",
+        [
+            Creator("DECO*27", "ttf"),
+            Creator("emon(Tes.)", "fft"),
+            Creator("Rockwell", "fft")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("another", ["mafuyu"]),
@@ -647,6 +812,9 @@ const musics = [
     ),
     Music(51, "potatoになっていく",
         [
+            Creator("Neru", "ttt")
+        ],
+        [
             Vocal("virtual", ["rin", "len"]),
             Vocal("sekai", ["rui", "miku", "tsukasa", "emu", "nene"])
         ],
@@ -660,6 +828,9 @@ const musics = [
     ),
     Music(52, "ローリンガール",
         [
+            Creator("wowaka", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2010, 2, 14),
@@ -671,6 +842,9 @@ const musics = [
     ),
     Music(53, "モア！ジャンプ！モア！",
         [
+            Creator("ナユタン星人", "ttt")
+        ],
+        [
             Vocal("sekai", ["airi", "miku", "minori", "haruka", "shizuku"])
         ],
         mDate(2020, 11, 19),
@@ -680,6 +854,9 @@ const musics = [
         ]
     ),
     Music(54, "裏表ラバーズ",
+        [
+            Creator("wowaka", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"])
         ],
@@ -692,6 +869,9 @@ const musics = [
     ),
     Music(55, "アンノウン・マザーグース",
         [
+            Creator("wowaka", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2017, 8, 22),
@@ -703,6 +883,9 @@ const musics = [
     ),
     Music(56, "愛されなくても君がいる",
         [
+            Creator("ピノキオピー", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2020, 7, 22),
@@ -713,6 +896,9 @@ const musics = [
         ]
     ),
     Music(57, "ウミユリ海底譚",
+        [
+            Creator("n-buna", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["ichika", "miku", "honami"])
@@ -726,6 +912,9 @@ const musics = [
         ]
     ),
     Music(58, "Forward",
+        [
+            Creator("R Sound Design", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("virtual", ["rin", "meiko", "miku", "kaito", "len"]),
@@ -741,6 +930,9 @@ const musics = [
         ]
     ),
     Music(59, "独りんぼエンヴィー",
+        [
+            Creator("koyori", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("virtual", ["miku", "luka", "rin"]),
@@ -758,6 +950,9 @@ const musics = [
     ),
     Music(60, "ニジイロストーリーズ",
         [
+            Creator("OSTER project", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku", "rin", "len", "luka", "meiko", "kaito"]),
             Vocal("sekai", ["nene", "rui", "meiko", "kaito"]),
             Vocal("another", ["nene", "rui"]),
@@ -773,6 +968,9 @@ const musics = [
     ),
     Music(61, "ODDS & ENDS",
         [
+            Creator("ryo", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2012, 8, 14),
@@ -782,6 +980,10 @@ const musics = [
         ]
     ),
     Music(62, "ドラマツルギー",
+        [
+            Creator("Eve", "ttf"),
+            Creator("Numa", "fft")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["miku", "ichika"]),
@@ -796,6 +998,10 @@ const musics = [
     ),
     Music(63, "グリーンライツ・セレナーデ",
         [
+            Creator("Sakurai", "tff"),
+            Creator("Omoi", "ftt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2018, 7, 6),
@@ -808,6 +1014,9 @@ const musics = [
         ]
     ),
     Music(64, "恋愛裁判",
+        [
+            Creator("40mP", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["airi", "miku", "minori"]),
@@ -823,6 +1032,9 @@ const musics = [
     ),
     Music(65, "＊ハロー、プラネット。",
         [
+            Creator("sasakure.UK", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2009, 5, 24),
@@ -835,6 +1047,9 @@ const musics = [
     ),
     Music(66, "千本桜",
         [
+            Creator("黒うさ", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"]),
             Vocal("virtual", ["miku", "rin", "len", "luka", "meiko", "kaito"])
         ],
@@ -845,6 +1060,10 @@ const musics = [
         ]
     ),
     Music(67, "ECHO",
+        [
+            Creator("Crusher-P", "ttf"),
+            Creator("Circus-P", "ttf")
+        ],
         [
             Vocal("virtual", ["gumi"]),
             Vocal("sekai", ["luka", "kohane", "an", "akito", "toya"]),
@@ -860,6 +1079,9 @@ const musics = [
     ),
     Music(68, "チュルリラ・チュルリラ・ダッダッダ！",
         [
+            Creator("和田たけあき(くらげP)", "ttt")
+        ],
+        [
             Vocal("sekai", ["tsukasa", "emu", "nene", "rui"]),
             Vocal("another", ["tsukasa", "nene"])
         ],
@@ -872,6 +1094,9 @@ const musics = [
         ]
     ),
     Music(69, "ブレス・ユア・ブレス",
+        [
+            Creator("和田たけあき", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"])
         ],
@@ -886,6 +1111,9 @@ const musics = [
     ),
     Music(70, "とても痛い痛がりたい",
         [
+            Creator("EZFG", "ttt")
+        ],
+        [
             Vocal("virtual", ["vy2v3"]),
             Vocal("sekai", ["miku", "mafuyu", "ena"])
         ],
@@ -897,6 +1125,9 @@ const musics = [
         ]
     ),
     Music(71, "霽れを待つ",
+        [
+            Creator("Orangestar", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["honami", "ichika", "miku", "saki", "shiho"]),
@@ -913,6 +1144,9 @@ const musics = [
     ),
     Music(72, "ワールズエンド・ダンスホール",
         [
+            Creator("wowaka", "ttt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2010, 5, 18),
@@ -924,6 +1158,10 @@ const musics = [
     ),
     Music(73, "ヒビカセ",
         [
+            Creator("れをる", "tff"),
+            Creator("ギガ", "ftt")
+        ],
+        [
             Vocal("virtual", ["miku"])
         ],
         mDate(2014, 9, 24),
@@ -934,6 +1172,9 @@ const musics = [
         ]
     ),
     Music(74, "Color of Drops",
+        [
+            Creator("40mP", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["shizuku", "luka", "minori", "haruka", "airi"]),
@@ -949,6 +1190,10 @@ const musics = [
     ),
     Music(75, "RAD DOGS",
         [
+            Creator("q*Left", "tff"),
+            Creator("八王子P", "ftt")
+        ],
+        [
             Vocal("sekai", ["toya", "akito", "kohane", "an", "miku"])
         ],
         mDate(2021, 2, 7),
@@ -958,6 +1203,9 @@ const musics = [
         ]
     ),
     Music(76, "ミルククラウン・オン・ソーネチカ",
+        [
+            Creator("ユジー", "ttt")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("sekai", ["minori", "shizuku", "miku"]),
@@ -972,6 +1220,11 @@ const musics = [
         ]
     ),
     Music(77, "タイムマシン",
+        [
+            Creator("164", "tff"),
+            Creator("40mP", "ftf"),
+            Creator("1640mP", "fft")
+        ],
         [
             Vocal("virtual", ["miku"]),
             Vocal("virtual", ["miku", "luka", "meiko"]),
