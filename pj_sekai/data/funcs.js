@@ -5,20 +5,38 @@ const resetElement = (id) => {
     d.id = id;
 }
 const getTd = (text, className = null) => {
-    let td = document.createElement("td");
-    td.innerText = text;
-    if (className != null) {
-        td.className = className;
-    }
-    return td;
+    return getElm("td", text, className);
 }
 const getTh = (text, className = null) => {
-    let th = document.createElement("th");
-    th.innerText = text;
+    return getElm("th", text, className);
+}
+const getSpan = (text, className = null) => {
+    return getElm("span", text, className);
+}
+const getBr = () => {
+    return document.createElement("br");
+}
+const getElm = (elm, text, className = null) => {
+    let d = document.createElement(elm);
+    d.innerText = text;
     if (className != null) {
-        th.className = className;
+        d.className = className;
     }
-    return th;
+    return d;
+}
+const concatElms = (elms, joint) => {
+    let span = getSpan("");
+    let flag = false;
+    for (let e of elms) {
+        if (flag) {
+            span.appendChild(joint.cloneNode(true));
+        }
+        else {
+            flag = true;
+        }
+        span.appendChild(e);
+    }
+    return span;
 }
 const getCharactersByUnits = (units) => {
     let arr = {};
