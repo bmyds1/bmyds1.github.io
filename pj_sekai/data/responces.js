@@ -48,6 +48,7 @@ const responces = [
     //minori
     Responce("minori", "haruka", "L・O・V・E、遥！", "み、みのりの応援がすごい…"),
     Responce("haruka", "minori", "私たちの想いを、みんなに！", "大丈夫、きっと伝わるよ！"),
+    Responce("minori", "airi", "愛莉ちゃん、絶好調だね！", "当たり前よ、ステージの上だもの！"),
     Responce("airi", "minori", "へばってないでしょうね！", "うん！ まだまだ大丈夫！"),
     Responce("minori", "shizuku", "雫ちゃんみたいに、キラキラ踊れてるかな？", "とっても可愛いわよ、みのりちゃん！"),
     Responce("shizuku", "minori", "大丈夫、みんなとならできる！", "そうだよ！ 私たち、一人じゃない！"),
@@ -59,18 +60,31 @@ const responces = [
     Responce("luka", "minori", "リラックスしていきましょう！", "はい！ 深呼吸、深呼吸…！"),
     //haruka
     Responce("haruka", "airi", "最後まで油断せずにね！", "その言葉、そっくりそのまま返してあげる！"),
+    Responce("airi", "haruka", "遥、ついてきてる？", "当然よ。愛莉こそ遅れないでね？"),
     Responce("haruka", "shizuku", "私たちの想いをどこまでも！", "ええ、届けましょう、みんなに！"),
     Responce("shizuku", "haruka", "遥ちゃん、合わせるわ！", "流石ね、タイミング完璧！"),
+    Responce("haruka", "miku_more", "流石だねミク！", "ふふ、遥ちゃんもいい調子！"),
     Responce("miku_more", "haruka", "ペンライト綺麗だね！", "うん、みんなの想いに答えなくちゃ！"),
+    Responce("haruka", "rin", "リン、まだまだいけそう？", "もっちろん！ 見ててね！"),
+    Responce("rin", "haruka", "みんなに希望をお届け！", "私も負けてられないな…！"),
+    Responce("haruka", "luka", "みんなの想い、繋げなきゃ！", "ええ、ファンのみんなのためにもね！"),
+    Responce("luka", "haruka", "想いを込めて歌いましょう！", "うん、みんなに希望を届けるために！"),
     //airi
     Responce("airi", "shizuku", "このステージ、最高ね！", "ふふ、私も同じこと考えてた！"),
-    Responce("shizuku", "airi", "みんなの気持ちが一つになってる気がする！", "気がするじゃなくて、そうなのよ！"),
+    Responce("shizuku", "airi", "みんなの気持ちが一つになってる気がする！", "気がするじゃなくて、そうなのよ！ さ、まだまだ行くわよ！"),
     Responce("airi", "miku_more", "ライブはこうじゃなくちゃ！", "うん！ すごく楽しいね！"),
     Responce("miku_more", "airi", "愛莉ちゃん、いくよ！", "ええ、ここからが見せ場よね！"),
+    Responce("airi", "rin", "特訓の成果を見せるわよ！", "いけいけ愛莉ちゃん！"),
+    Responce("rin", "airi", "みんなノってるー！", "リンってば絶好調ね！"),
+    Responce("airi", "luka", "最高の私たちを見せるわよ！", "さあ、行きましょう！"),
+    Responce("luka", "airi", "たくさんの応援が聞こえるわ！", "ええ、しっかり応えなくちゃね！"),
     //shizuku
+    Responce("shizuku", "miku_more", "私たちの歌をみんなに！", "うん！ 絶対届けようね！"),
     Responce("miku_more", "shizuku", "雫ちゃん、いい感じだね！", "練習の成果が出せてよかったわ！"),
     Responce("shizuku", "rin", "ステップ、完璧だったわ！", "やったー！ この調子で頑張るね！"),
-    Responce("luka", "shizuku", "みんなの音が響き渡ってるわね！", "ファンのみんなにも届いてるかしら？"),
+    Responce("rin", "shizuku", "最高の歌を届けようね！", "今日のために練習したんだものね！"),
+    Responce("shizuku", "luka", "まだまだ盛り上げたいわ！", "ええ、一緒に頑張りましょう！"),
+    Responce("luka", "shizuku", "みんなの歌が響き渡ってるわね！", "ファンのみんなにも届いてるかしら？"),
     //miku_more
     Responce("miku_more", "rin", "盛り上がってきてるね！", "うん！ でも、まだまだこれからだよ！"),
     //rui
@@ -79,6 +93,7 @@ const responces = [
     Responce("mizuki", "rui", "そろそろボクの出番かな？", "僕のことも忘れてもらっては困るよ？"),
     Responce("mizuki", "rui", "類もカワイイポーズしてみる？", "いやいや、君の株を奪うような真似は出来ないよ"),
     //rin
+    Responce("rin", "luka", "綺麗な音があふれてるよ！", "ええ、この流れ、大事にしたいわ！"),
     Responce("luka", "rin", "その調子よ、リン！", "ありがとうルカ！ でもまだまだいけるよ！"),
     //luka
     Responce("luka", "meiko", "そろそろ私たちの見せ場かしら？", "カッコいいところ見せちゃいましょ！"),
