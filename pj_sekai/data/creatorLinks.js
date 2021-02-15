@@ -1,5 +1,5 @@
 const creatorLinks = {
-    "kz(livetune)": "https://twitter.com/kz_lt",
+    "kz": "https://twitter.com/kz_lt",
     "さつき が てんこもり": "https://twitter.com/tenkomori",
     "ryo": "https://twitter.com/ryo_spcl",
     "cosMo@暴走P": "https://twitter.com/cosmobsp",
@@ -35,7 +35,6 @@ const creatorLinks = {
     "Neru": "https://twitter.com/neru_sleep",
     "カンザキイオリ": "https://twitter.com/kurogaki0311",
     "ナユタン星人": "https://twitter.com/NayutalieN",
-    "kz": "https://twitter.com/kz_lt",
     "じん": "https://twitter.com/jin_jin_suruyo",
     "八王子P": "https://twitter.com/8_Prince",
     "すりぃ": "https://twitter.com/iii0303_8",

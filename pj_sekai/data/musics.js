@@ -1,7 +1,7 @@
 const musics = [
     Music(1, "Tell Your World",
         [
-            Creator("kz(livetune)", "ttf")
+            Creator("kz", "ttf")
         ],
         [
             Vocal("virtual", ["miku"])
@@ -1236,6 +1236,23 @@ const musics = [
         [
             mURL("原曲", "https://www.youtube.com/watch?v=EgOWe9ByNaE"),
             mURL("3DMV", "https://www.youtube.com/watch?v=NHR3b9v_S0I")
+        ]
+    ),
+    Music(78, "drop pop candy",
+        [
+            Creator("れをる", "tff"),
+            Creator("ギガ", "ftt")
+        ],
+        [
+            Vocal("virtual", ["rin", "luka"]),
+            Vocal("sekai", ["rin", "luka", "kohane", "an"])
+        ],
+        mDate(2014, 7, 18),
+        mDate(2021, 2, 15),
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm24029703"),
+            mURL("原曲", "https://www.youtube.com/watch?v=4sq2lPNxi7M"),
+            mURL("3DMV", "https://www.youtube.com/watch?v=KxNII3csgw4")
         ]
     )
 ];
