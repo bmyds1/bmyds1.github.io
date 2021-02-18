@@ -87,15 +87,60 @@ const responces = [
     Responce("luka", "shizuku", "みんなの歌が響き渡ってるわね！", "ファンのみんなにも届いてるかしら？"),
     //miku_more
     Responce("miku_more", "rin", "盛り上がってきてるね！", "うん！ でも、まだまだこれからだよ！"),
+    //kohane
+    Responce("kohane", "an", "このドキドキ、杏ちゃんも感じてる？", "もちろん！ でももっとドキドキさせてあげる！"),
+    Responce("an", "kohane", "まだまだ楽しんじゃおう！", "私ももっと歌いたい！"),
+    Responce("kohane", "akito", "私だって、もっとできることが…！", "やりたいようにやれ、フォローくらいしてやる"),
+    Responce("akito", "kohane", "まだ余力ありそうだな！", "全部出し切らなきゃだね！"),
+    Responce("kohane", "toya", "すごいね、緊張してないなんて…！", "必要な練習はしてきたからな"),
+    Responce("toya", "kohane", "まだいけるんじゃないか？", "うん！ 頑張ってみる！"),
+    Responce("miku_vivid", "kohane", "いいよ！ その感じでラストスパート！", "うん！ 私にだってきっとできる！"),
+    //an
+    Responce("an", "toya", "冬弥ももっと楽しんだら？", "十分そうしてるつもりだが…"),
+    Responce("toya", "an", "今のところは順調か", "流石、安定感あるよね！"),
+    //akito
+    //toya
+    Responce("toya", "mizuki", "一緒に歌えるとはな…", "ボクもワクワクしてるよ！"),
+    Responce("mizuki", "toya", "冬弥君、調子いいね！", "暁山こそ、いい感じだ！"),
+    //miku_vivid
+    Responce("miku_vivid", "len", "いいね！ ちょっとアドリブ入れたくなる！", "って言いながらもう入れてるし！"),
+    Responce("miku_vivid", "meiko", "かなりいい調子だね！", "ふふ、ミクもすっかりノリノリだもんね！"),
+    Responce("meiko", "miku_vivid", "順調順調！", "私もまだまだ行けるよ！"),
+    //tsukasa
+    //emu
     //rui
     Responce("rui", "mizuki", "おや、ずいぶん協力的だね？", "昔馴染みのためだからかな？"),
     Responce("rui", "mizuki", "さて、行こうか瑞希", "オッケー！ イッツ・ショータイム！"),
     Responce("mizuki", "rui", "そろそろボクの出番かな？", "僕のことも忘れてもらっては困るよ？"),
     Responce("mizuki", "rui", "類もカワイイポーズしてみる？", "いやいや、君の株を奪うような真似は出来ないよ"),
+    //nene
+    //miku_wonder
+    //kanade
+    Responce("kanade", "mafuyu", "すごく気持ちのこもった音…", "奏にはそう聞こえるんだね？"),
+    Responce("mafuyu", "kanade", "みんな楽しそう…", "まふゆは違うの？"),
+    Responce("kanade", "ena", "うん、いい音…", "ずっと聞いていたいよね…！"),
+    Responce("ena", "kanade", "奏、楽しんでいこ？", "私は作業に戻りたい…"),
+    Responce("kanade", "mizuki", "ちょ、ちょっと休憩…", "ダメダメ、まだこれからだよ？"),
+    Responce("mizuki", "kanade", "ボクもフルスロットルで頑張っちゃおうかな？", "私は見てるから、頑張って"),
+    //mafuyu
+    Responce("mafuyu", "ena", "これでいいでしょ？", "その言い方どうにかなんない？"),
+    Responce("ena", "mafuyu", "ふふっ、このままラストまで！", "油断してると足をすくわれるよ…"),
+    Responce("mafuyu", "mizuki", "瑞希、前に出ないの？", "さりげないカワイさも必要でしょ？"),
+    Responce("mizuki", "mafuyu", "部屋で撮るだけじゃこの空気は味わえないね！", "そうだね。悪く、ないかも…"),
+    //ena
+    Responce("ena", "mizuki", "私、注目されちゃってる！？", "はいはい、よかったねー"),
+    Responce("mizuki", "ena", "えななんの本気が見てみたーい！", "ちょっと、逆に調子狂うでしょ？"),
+    //mizuki
+    //miku
     //rin
     Responce("rin", "luka", "綺麗な音があふれてるよ！", "ええ、この流れ、大事にしたいわ！"),
     Responce("luka", "rin", "その調子よ、リン！", "ありがとうルカ！ でもまだまだいけるよ！"),
+    //len
+    Responce("len", "meiko", "へへっ、順調順調！", "まったく… 油断大敵よ？"),
+    Responce("meiko", "len", "いい調子できてるわね！", "でしょでしょ？"),
     //luka
     Responce("luka", "meiko", "そろそろ私たちの見せ場かしら？", "カッコいいところ見せちゃいましょ！"),
     Responce("meiko", "luka", "私たちでもっとみんなを引っ張っていくわよ！", "ええ、行きましょう、MEIKO！")
+    //meiko
+    //kaito
 ];
