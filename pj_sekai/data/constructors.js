@@ -24,19 +24,13 @@ const Vocal = (type, members) => {
         type, members
     };
 };
+const VocalType = (fullName, shortName) => {
+    return {
+        fullName, shortName
+    };
+};
 const getMembersFromVocal = (v) => {
-    let header;
-    switch (v.type) {
-        case "virtual":
-            header = "(V)";
-            break;
-        case "sekai":
-            header = "(S)";
-            break;
-        case "another":
-            header = "(A)";
-            break;
-    }
+    const header = vocalTypes[v.type].shortName;
     let names = [];
     for (let m of v.members) {
         if (typeof characters[m] != "undefined") {
