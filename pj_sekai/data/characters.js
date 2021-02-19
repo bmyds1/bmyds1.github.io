@@ -35,5 +35,6 @@ const characters_other = {
     "gumi": Character("GUMI", "GUMI", "virtual"),
     "flower": Character("flower", "flower", "virtual"),
     "ia": Character("IA", "IA", "virtual"),
-    "vy2v3": Character("VY2V3", "VY2V3", "virtual")
+    "vy2v3": Character("VY2V3", "VY2V3", "virtual"),
+    "una": Character("音街ウナ", "ウナ", "virtual")
 };

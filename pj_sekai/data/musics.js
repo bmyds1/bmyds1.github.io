@@ -1254,5 +1254,22 @@ const musics = [
             mURL("原曲", "https://www.youtube.com/watch?v=4sq2lPNxi7M"),
             mURL("3DMV", "https://www.youtube.com/watch?v=KxNII3csgw4")
         ]
+    ),
+    Music(79, "ポジティブ☆ダンスタイム",
+        [
+            Creator("キノシタ", "ttt")
+        ],
+        [
+            Vocal("virtual", ["una", "rin"]),
+            Vocal("sekai", ["rin", "emu", "nene"]),
+            Vocal("another", ["emu"]),
+            Vocal("another", ["nene"])
+        ],
+        mDate(2017, 10, 12),
+        mDate(2021, 2, 19),
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm32087162"),
+            mURL("原曲", "https://www.youtube.com/watch?v=FT91CrPPAqc")
+        ]
     )
 ];
