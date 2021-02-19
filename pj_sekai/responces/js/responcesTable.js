@@ -74,7 +74,7 @@ const initResponcesTable = () => {
                     let spanResponce = document.createElement("span");
                     spanResponce.innerText = responceTexts;
                     spanResponce.classList.add("responceText");
-                    if (cNumTmp < 20) {
+                    if (cNumTmp < 18) {
                         spanResponce.classList.add("responceTextLeft");
                     }
                     else {
