@@ -62,4 +62,5 @@ const creatorLinks = {
     "ギガ": "https://twitter.com/GigaMozuku",
     "ユジー": "https://twitter.com/hsURanus_yuzy",
     "164": "https://twitter.com/164203",
+    "キノシタ": "https://twitter.com/k1n0shita"
 };
