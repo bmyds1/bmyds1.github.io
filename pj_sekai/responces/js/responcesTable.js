@@ -4,26 +4,8 @@ const initSelect = () => {
     resetElement("div_to");
     let div_to = document.getElementById("div_to");
     for (let i in units) {
-        let label_from = document.createElement("label");
-        let checkbox_from = document.createElement("input");
-        checkbox_from.type = "checkbox";
-        checkbox_from.name = "from";
-        checkbox_from.id = "from_" + i;
-        checkbox_from.value = i;
-        checkbox_from.checked = true;
-        label_from.appendChild(checkbox_from);
-        let spanText_from = document.createElement("span");
-        spanText_from.innerText = units[i].fullName;
-        spanText_from.style.userSelect = "none";
-        label_from.appendChild(spanText_from);
-        div_from.appendChild(label_from);
-        let label_to = document.createElement("label");
-        let checkbox_to = checkbox_from.cloneNode(true);
-        checkbox_to.name = "to";
-        checkbox_to.id = "to_" + i;
-        label_to.appendChild(checkbox_to);
-        label_to.appendChild(spanText_from.cloneNode(true));
-        div_to.appendChild(label_to);
+        div_from.appendChild(getCheckboxLabel("from", i, units[i].fullName, true));
+        div_to.appendChild(getCheckboxLabel("to", i, units[i].fullName, true));
     }
 }
 const initResponcesTable = () => {

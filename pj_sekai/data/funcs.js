@@ -24,6 +24,20 @@ const getElm = (elm, text, className = null) => {
     }
     return d;
 }
+const getCheckboxLabel = (name, value, text, isChecked = false) => {
+    let label = document.createElement("label");
+    let checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.name = name;
+    checkbox.value = value;
+    checkbox.checked = isChecked;
+    label.appendChild(checkbox);
+    let spanText = document.createElement("span");
+    spanText.innerText = text;
+    spanText.style.userSelect = "none";
+    label.appendChild(spanText);
+    return label;
+}
 const concatElms = (elms, joint) => {
     let span = getSpan("");
     let flag = false;

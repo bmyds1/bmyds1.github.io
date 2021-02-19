@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="../data/constructors.js"></script>
     <script src="../data/funcs.js"></script>
+    <script src="../data/vocalTypes.js"></script>
     <script src="../data/musics.js"></script>
     <script src="../data/characters.js"></script>
     <script src="../data/units.js"></script>
@@ -23,11 +24,14 @@
     <form id="form">
         <b>Sort: </b>
         <select id="select_sort">
-            <option value="implemented_asc">収録日の古い順番</option>
-            <option value="implemented_desc">収録日の新しい順番</option>
-            <option value="posted_asc">投稿日の古い順番</option>
-            <option value="posted_desc">投稿日の新しい順番</option>
+            <option value="implemented_asc">収録日の古い順</option>
+            <option value="implemented_desc">収録日の新しい順</option>
+            <option value="posted_asc">投稿日の古い順</option>
+            <option value="posted_desc">投稿日の新しい順</option>
         </select>
+        <br />
+        <b>Option:</b><br />
+        表示ボーカル:<span id="span_showVocals"></span>
     </form>
     <table id="table"></table>
     <hr />
@@ -41,6 +45,10 @@
     <b>更新履歴</b>
     <ul>
         <li>
+            2021/02/19(2回目)<br />
+            ボーカルの表示範囲を変更できる機能を追加
+        </li>
+        <li>
             2021/02/19<br />
             「ポジティブ☆ダンスタイム」の情報を追加
         </li>
@@ -48,24 +56,22 @@
             2021/02/15<br />
             「drop pop candy」の情報を追加
         </li>
-        <li>
-            2021/02/13<br />
-            「タイムマシン」まで77曲の作詞/作曲/編曲者を追加
-        </li>
-        <li>
-            2021/02/11<br />
-            「タイムマシン」まで77曲の曲名、ボーカル、投稿日、収録日、URLを追加<br />
-            収録日、投稿日でのソートを追加
-        </li>
+
     </ul>
-    <!--
     <details>
         <summary>過去の更新履歴</summary>
         <ul>
-            <li></li>
+            <li>
+                2021/02/13<br />
+                「タイムマシン」まで77曲の作詞/作曲/編曲者を追加
+            </li>
+            <li>
+                2021/02/11<br />
+                「タイムマシン」まで77曲の曲名、ボーカル、投稿日、収録日、URLを追加<br />
+                収録日、投稿日でのソートを追加
+            </li>
         </ul>
     </details>
--->
     <hr />
     <p>不備等ございましたら、お手数ですが下記連絡先のいずれかよりご連絡ください。</p>
     <ul>
