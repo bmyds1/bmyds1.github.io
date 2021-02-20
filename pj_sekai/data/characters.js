@@ -38,3 +38,5 @@ const characters_other = {
     "vy2v3": Character("VY2V3", "VY2V3", "virtual"),
     "una": Character("音街ウナ", "ウナ", "virtual")
 };
+const characterIds = Object.keys(characters);
+const allCharacterIds = Object.keys(characters).concat(Object.keys(characters_other));

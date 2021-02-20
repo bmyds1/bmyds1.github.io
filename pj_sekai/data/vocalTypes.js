@@ -3,3 +3,4 @@ const vocalTypes = {
     "sekai": VocalType("セカイVer.", "(S)"),
     "another": VocalType("アナザーボーカルVer.", "(A)")
 }
+const vocalTypeIds = Object.keys(vocalTypes);

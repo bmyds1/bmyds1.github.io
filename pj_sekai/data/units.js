@@ -6,3 +6,4 @@ const units = {
     "wonder": Unit("ワンダーランズ×ショウタイム", "ワンダショ", "orange"),
     "night": Unit("25時、ナイトコードで。", "ニーゴ", "gray")
 };
+const unitIds = Object.keys(units);

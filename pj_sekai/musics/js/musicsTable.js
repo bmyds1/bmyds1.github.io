@@ -102,5 +102,24 @@ const getSortMusicFunc = (opt) => {
                     return -(ta - tb);
                 }
             }
+        case "unit_asc":
+            return (a, b) => {
+                let ua = getMainUnitFromUnits(a.units);
+                let ub = getMainUnitFromUnits(b.units);
+                let ia = unitIds.indexOf(ua);
+                let ib = unitIds.indexOf(ub);
+                if (ua == "other") {
+                    ia = 100;
+                }
+                if (ub == "other") {
+                    ib = 100;
+                }
+                if (ia == ib) {
+                    return a.id - b.id;
+                }
+                else {
+                    return ia - ib;
+                }
+            }
     }
 }

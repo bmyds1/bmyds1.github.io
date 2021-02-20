@@ -64,3 +64,4 @@ const creatorLinks = {
     "164": "https://twitter.com/164203",
     "キノシタ": "https://twitter.com/k1n0shita"
 };
+const creatorIds = Object.keys(creatorLinks);
