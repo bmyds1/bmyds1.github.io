@@ -17,6 +17,7 @@ const Responce = (from, to, fromStr, toStr) => {
 const Music = (id, title, creators, vocals, date_posted, date_implemented, urls) => {
     return {
         id, title, creators, vocals, date_posted, date_implemented, urls,
+        units: getUnitsFromVocals(vocals)
     };
 };
 const Vocal = (type, members) => {
@@ -29,6 +30,52 @@ const VocalType = (fullName, shortName) => {
         fullName, shortName
     };
 };
+const getUnitsFromVocals = (vs) => {
+    let us = {};
+    for (let un of unitIds) {
+        us[un] = false;
+    }
+    for (let v of vs) {
+        for (let m of v.members) {
+            if (typeof characters[m] == "undefined") {
+                continue;
+            }
+            us[characters[m].unit] = true;
+        }
+    }
+    let arr = [];
+    for (let un in us) {
+        if (us[un]) {
+            arr.push(un);
+        }
+    }
+    if (arr.length <= 1) {
+        return arr;
+    }
+    if (arr.length <= 2 && us["virtual"]) {
+        return arr;
+    }
+    if (us["virtual"]) {
+        return ["virtual", "other"];
+    }
+    return ["other"];
+}
+const getMainUnitFromUnits = (us) => {
+    if (us.length == 1) {
+        return us[0];
+    }
+    if (us.length == 2) {
+        let vId = us.indexOf("virtual");
+        if (vId >= 0) {
+            let uId = (vId + 1) % 2;
+            return us[uId];
+        }
+        else {
+            return "unclassified";
+        }
+    }
+    return "unclassified";
+}
 const getMembersFromVocal = (v) => {
     const header = vocalTypes[v.type].shortName;
     let names = [];
