@@ -132,7 +132,8 @@ const musics = [
         mDate(2020, 9, 30),
         [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm31685272"),
-            mURL("原曲", "https://www.youtube.com/watch?v=hxSg2Ioz3LM")
+            mURL("原曲", "https://www.youtube.com/watch?v=hxSg2Ioz3LM"),
+            mURL("2DMV", "https://www.youtube.com/watch?v=i16qWEUjd4o")
         ]
     ),
     Music(10, "ハッピーシンセサイザ",
