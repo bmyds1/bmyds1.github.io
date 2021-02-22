@@ -11,7 +11,8 @@ const Character = (fullName, shortName, unit) => {
 const Responce = (from, to, fromStr, toStr) => {
     return {
         from, to, fromStr, toStr,
-        text: characters[from].shortName + "「" + fromStr + "」\n" + characters[to].shortName + "「" + toStr + "」"
+        text: characters_responce[from].shortName + "「" + fromStr + "」\n"
+            + characters_responce[to].shortName + "「" + toStr + "」"
     };
 };
 const Music = (id, title, creators, vocals, date_posted, date_implemented, urls) => {
