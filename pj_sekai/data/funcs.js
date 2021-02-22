@@ -52,12 +52,3 @@ const concatElms = (elms, joint) => {
     }
     return span;
 }
-const getCharactersByUnits = (units) => {
-    let arr = {};
-    for (let i in characters) {
-        if (units[characters[i].unit]) {
-            arr[i] = characters[i];
-        }
-    }
-    return arr;
-}

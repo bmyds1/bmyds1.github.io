@@ -96,12 +96,18 @@ const responces = [
     Responce("toya", "kohane", "まだいけるんじゃないか？", "うん！ 頑張ってみる！"),
     Responce("miku_vivid", "kohane", "いいよ！ その感じでラストスパート！", "うん！ 私にだってきっとできる！"),
     //an
+    Responce("an", "akito", "お手並み拝見！", "はっ、じゃあ見てな！"),
+    Responce("akito", "an", "見てろ、ここからだ！", "いいね、絶好調じゃん！"),
     Responce("an", "toya", "冬弥ももっと楽しんだら？", "十分そうしてるつもりだが…"),
     Responce("toya", "an", "今のところは順調か", "流石、安定感あるよね！"),
     //akito
+    Responce("akito", "toya", "満足するのは早いぞ！", "ああ、分かってる！"),
+    Responce("toya", "akito", "俺たちの出番だな", "ったく、待ちくたびれた！"),
+    Responce("akito", "mizuki", "おい、ついてきてるか？", "今のところね！"),
+    Responce("mizuki", "akito", "弟クン、さあ行くよ！", "だからそれやめろっての…！"),
     //toya
     Responce("toya", "mizuki", "一緒に歌えるとはな…", "ボクもワクワクしてるよ！"),
-    Responce("mizuki", "toya", "冬弥君、調子いいね！", "暁山こそ、いい感じだ！"),
+    Responce("mizuki", "toya", "冬弥クン、調子いいね！", "暁山こそ、いい感じだ！"),
     //miku_vivid
     Responce("miku_vivid", "len", "いいね！ ちょっとアドリブ入れたくなる！", "って言いながらもう入れてるし！"),
     Responce("miku_vivid", "meiko", "かなりいい調子だね！", "ふふ、ミクもすっかりノリノリだもんね！"),

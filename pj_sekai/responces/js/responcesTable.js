@@ -75,6 +75,15 @@ const initResponcesTable = () => {
     }
     console.log("created!");
 }
+const getCharactersByUnits = (units) => {
+    let arr = {};
+    for (let i of responceCharacterIds) {
+        if (units[characters_responce[i].unit]) {
+            arr[i] = characters_responce[i];
+        }
+    }
+    return arr;
+}
 const getResponceTexts = (from, to) => {
     let arr = [];
     for (let r of responces) {
