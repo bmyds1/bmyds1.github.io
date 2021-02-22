@@ -1272,5 +1272,19 @@ const musics = [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm32087162"),
             mURL("原曲", "https://www.youtube.com/watch?v=FT91CrPPAqc")
         ]
+    ),
+    Music(80, "Brand New Day",
+        [
+            Creator("いるかアイス", "ttt")
+        ],
+        [
+            Vocal("virtual", ["miku"])
+        ],
+        mDate(2020, 11, 30),
+        mDate(2021, 2, 22),
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm37894731"),
+            mURL("原曲", "https://www.youtube.com/watch?v=2KrCmAWrrKI")
+        ]
     )
 ];
