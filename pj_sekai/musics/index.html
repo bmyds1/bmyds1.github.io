@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="google-site-verification" content="0csowaSOa6jLfWV0dboNUe440NhsNwcEi7m2G-7mqRk" />
-    <title>プロセカ 収録楽曲一覧</title>
+    <title>プロセカ 収録楽曲一覧 (2021/2/23更新)</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="../data/constructors.js"></script>
     <script src="../data/funcs.js"></script>
@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <h1>プロセカ 収録楽曲一覧<span id="lastModified"></span></h1>
+    <h1 id="h1"></h1>
     <form id="form">
         <b>Sort: </b>
         <select id="select_sort">
@@ -45,6 +45,11 @@
     <b>更新履歴</b>
     <ul>
         <li>
+            2021/2/23<br />
+            最終更新日の自動更新が意味なかったので修正<br />
+            フッター自動生成機能の準備
+        </li>
+        <li>
             2021/2/22(2回目)<br />
             最終更新日を自動更新するように変更<br />
             一部メタタグの調整(試験的)
@@ -61,18 +66,18 @@
             2021/2/20<br />
             「ヒバナ -Reloaded-」の2DMVへのリンクを追加
         </li>
-        <li>
-            2021/2/19(2回目)<br />
-            ボーカルの表示範囲を変更できる機能を追加
-        </li>
-        <li>
-            2021/2/19<br />
-            「ポジティブ☆ダンスタイム」の情報を追加
-        </li>
     </ul>
     <details>
         <summary>過去の更新履歴</summary>
         <ul>
+            <li>
+                2021/2/19(2回目)<br />
+                ボーカルの表示範囲を変更できる機能を追加
+            </li>
+            <li>
+                2021/2/19<br />
+                「ポジティブ☆ダンスタイム」の情報を追加
+            </li>
             <li>
                 2021/2/15<br />
                 「drop pop candy」の情報を追加
@@ -89,11 +94,7 @@
         </ul>
     </details>
     <hr />
-    <p>不備等ございましたら、お手数ですが下記連絡先のいずれかよりご連絡ください。</p>
-    <ul>
-        <li>Mail: bmyds1[at]gmail.com</li>
-        <li>Twitter: @bmyds1</li>
-    </ul>
+    <footer id="footer"></footer>
 </body>
 
 </html>
