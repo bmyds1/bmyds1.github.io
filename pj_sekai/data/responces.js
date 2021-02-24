@@ -103,9 +103,13 @@ const responces = [
     //akito
     Responce("akito", "toya", "満足するのは早いぞ！", "ああ、分かってる！"),
     Responce("toya", "akito", "俺たちの出番だな", "ったく、待ちくたびれた！"),
+    Responce("akito", "tsukasa", "意外とやるじゃねえか！", "意外とはなんだ意外とは！"),
+    Responce("tsukasa", "akito", "その調子でついてこい！", "はぁ、手ぇ抜くわけにいかねえしな！"),
     Responce("akito", "mizuki", "おい、ついてきてるか？", "今のところね！"),
     Responce("mizuki", "akito", "弟クン、さあ行くよ！", "だからそれやめろっての…！"),
     //toya
+    Responce("toya", "tsukasa", "盛り上がってきましたね", "しかし、オレたちはその上をいくのだ！"),
+    Responce("tsukasa", "toya", "冬弥、やっといい笑顔になったな！", "えっ？ 俺、笑ってますか？"),
     Responce("toya", "mizuki", "一緒に歌えるとはな…", "ボクもワクワクしてるよ！"),
     Responce("mizuki", "toya", "冬弥クン、調子いいね！", "暁山こそ、いい感じだ！"),
     //miku_vivid
@@ -113,8 +117,14 @@ const responces = [
     Responce("miku_vivid", "meiko", "かなりいい調子だね！", "ふふ、ミクもすっかりノリノリだもんね！"),
     Responce("meiko", "miku_vivid", "順調順調！", "私もまだまだ行けるよ！"),
     //tsukasa
+    Responce("tsukasa", "rui", "かなり調子いいぞ！", "本当に君は本番に強いねえ！"),
+    Responce("rui", "tsukasa", "素晴らしいショーになる予感がするよ！", "ああ、俺もそう思っていた！"),
+    Responce("tsukasa", "nene", "ふっ、俺を呼ぶ歓声が聞こえる！", "耳、大丈夫？"),
+    Responce("nene", "tsukasa", "しっかり合わせてよ？", "誰に言っている！ 任せろ！"),
     //emu
     //rui
+    Responce("rui", "nene", "ここからが僕たちの真骨頂だ！", "うん、行くよ、ネネロボ！"),
+    Responce("nene", "rui", "楽しそうだね", "ふふっ、これだけ盛り上がっていて楽しくないはずがないよ"),
     Responce("rui", "mizuki", "おや、ずいぶん協力的だね？", "昔馴染みのためだからかな？"),
     Responce("rui", "mizuki", "さて、行こうか瑞希", "オッケー！ イッツ・ショータイム！"),
     Responce("mizuki", "rui", "そろそろボクの出番かな？", "僕のことも忘れてもらっては困るよ？"),
