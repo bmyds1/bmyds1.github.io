@@ -105,6 +105,8 @@ const responces = [
     Responce("toya", "akito", "俺たちの出番だな", "ったく、待ちくたびれた！"),
     Responce("akito", "tsukasa", "意外とやるじゃねえか！", "意外とはなんだ意外とは！"),
     Responce("tsukasa", "akito", "その調子でついてこい！", "はぁ、手ぇ抜くわけにいかねえしな！"),
+    Responce("akito", "ena", "やればできるじゃねえか！", "ふん、あんたにそう言われてもね"),
+    Responce("ena", "akito", "足、引っ張らないでよ", "こっちのセリフだっつーの"),
     Responce("akito", "mizuki", "おい、ついてきてるか？", "今のところね！"),
     Responce("mizuki", "akito", "弟クン、さあ行くよ！", "だからそれやめろっての…！"),
     //toya
