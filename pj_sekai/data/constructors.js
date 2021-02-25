@@ -15,6 +15,11 @@ const Responce = (from, to, fromStr, toStr) => {
             + characters_responce[to].shortName + "「" + toStr + "」"
     };
 };
+const Name = (from, to, name) => {
+    return {
+        from, to, name
+    };
+}
 const Music = (id, title, creators, vocals, date_posted, date_implemented, urls) => {
     return {
         id, title, creators, vocals, date_posted, date_implemented, urls,
