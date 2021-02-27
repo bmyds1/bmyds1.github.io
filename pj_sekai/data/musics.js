@@ -1286,5 +1286,23 @@ const musics = [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm37894731"),
             mURL("原曲", "https://www.youtube.com/watch?v=2KrCmAWrrKI")
         ]
+    ),
+    Music(81, "限りなく灰色へ",
+        [
+            Creator("すりぃ", "ttt")
+        ],
+        [
+            Vocal("virtual", ["len"]),
+            Vocal("sekai", ["ena", "rin", "kanade", "mafuyu", "mizuki"]),
+            Vocal("another", ["ena"]),
+            Vocal("another", ["rin"])
+        ],
+        mDate(2021, 2, 26),
+        mDate(2021, 2, 26),
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm38335870"),
+            mURL("原曲", "https://www.youtube.com/watch?v=cwLlHFMlBNQ"),
+            mURL("3DMV", "https://www.youtube.com/watch?v=kmZnbc4aKUk")
+        ]
     )
 ];
