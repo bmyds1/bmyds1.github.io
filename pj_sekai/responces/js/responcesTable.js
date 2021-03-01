@@ -11,6 +11,7 @@ const initSelect = () => {
     let div_option = document.getElementById("div_option");
     div_option.appendChild(getCheckboxLabel("option", "distFromTo", "どちらから話しかけたかを区別して表を作成する", true));
     div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", true));
+    div_option.appendChild(getCheckboxLabel("option", "dispName", "各キャラクターの一人称も表示する", true));
 }
 const initResponcesTable = () => {
     resetElement("table");
@@ -54,28 +55,26 @@ const initResponcesTable = () => {
         let cNumTmp = 0;
         for (let j in characters_to) {
             let tdEach = document.createElement("td");
-            if (isIntersection(i, j)) {
-                tdEach.classList.add("intersection");
-            }
-            else {
-                let responceTexts = getResponceTexts(i, j, options);
-                if (responceTexts != null) {
-                    tdEach.innerText = "*";
-                    tdEach.classList.add("hasResponce");
-                    let spanResponce = document.createElement("span");
-                    spanResponce.innerText = responceTexts;
-                    spanResponce.classList.add("responceText");
-                    if (cNumTmp < 12) {
-                        spanResponce.classList.add("responceTextLeft");
-                    }
-                    else {
-                        spanResponce.classList.add("responceTextRight");
-                    }
-                    tdEach.appendChild(spanResponce);
+            let responceTexts = getResponceTexts(i, j, options);
+            if (responceTexts != null) {
+                tdEach.innerText = "*";
+                tdEach.className = "tdResponce hasResponce";
+                let spanResponce = document.createElement("span");
+                spanResponce.innerText = responceTexts;
+                //spanResponce.className = "responceText";
+                if (cNumTmp < 12) {
+                    spanResponce.className = "responceText responceTextLeft";
                 }
                 else {
-                    tdEach.classList.add("noResponce");
+                    spanResponce.className = "responceText responceTextRight";
                 }
+                tdEach.appendChild(spanResponce);
+            }
+            else {
+                tdEach.className = "tdResponce noResponce";
+            }
+            if (isIntersection(i, j)) {
+                tdEach.className = "tdResponce intersection";
             }
             trRow.appendChild(tdEach);
             ++cNumTmp;
@@ -96,6 +95,15 @@ const getCharactersByUnits = (units, options) => {
 }
 const getResponceTexts = (from, to, options) => {
     let arr = [];
+    if (options.dispName) {
+        for (let n of names) {
+            let nFrom = n.from;
+            let nTo = n.to;
+            if (nFrom == from && nTo == to) {
+                arr.push(n.text);
+            }
+        }
+    }
     for (let r of responces) {
         let rFrom = r.from;
         let rTo = r.to;

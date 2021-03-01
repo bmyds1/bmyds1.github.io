@@ -13,10 +13,10 @@ const names = [
     Name("toya", "toya", "俺"),
     Name("tsukasa", "tsukasa", "オレ"),
     Name("emu", "emu", "あたし"),
-    Name("rui", "rui", "わたし"),
-    Name("nene", "nene", "僕(ごく稀に俺)"),
+    Name("nene", "nene", "わたし"),
+    Name("rui", "rui", "僕(ごく稀に俺)"),
     Name("kanade", "kanade", "わたし"),
     Name("mafuyu", "mafuyu", "私"),
     Name("ena", "ena", "私"),
-    Name("mizuki", "mizki", "ボク")
+    Name("mizuki", "mizuki", "ボク")
 ];

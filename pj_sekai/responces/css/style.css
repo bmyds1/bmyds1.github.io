@@ -38,10 +38,10 @@ td.intersection {
     background-color: dimgray;
 }
 
-td.hasResponce span.responceText {
+td.tdResponce span.responceText {
     display: none;
     position: absolute;
-    top: 25px;
+    top: 35px;
     background-color: rgba(241, 255, 180, 0.9);
     width: 400px;
     padding: 5px;
@@ -49,20 +49,16 @@ td.hasResponce span.responceText {
     z-index: 1;
 }
 
-td.hasResponce span.responceTextLeft {
-    left: 25px;
+td.tdResponce span.responceTextLeft {
+    left: 35px;
 }
 
-td.hasResponce span.responceTextRight {
-    right: 25px;
+td.tdResponce span.responceTextRight {
+    right: 35px;
 }
 
 td.hasResponce:hover {
     background-color: orange;
-}
-
-td.hasResponce:hover span.responceText {
-    display: block;
 }
 
 td.noResponce:hover {
@@ -71,4 +67,8 @@ td.noResponce:hover {
 
 td.intersection:hover {
     background-color: black;
+}
+
+td.tdResponce:hover span.responceText {
+    display: block;
 }
