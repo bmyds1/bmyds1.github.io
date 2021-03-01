@@ -17,7 +17,8 @@ const Responce = (from, to, fromStr, toStr) => {
 };
 const Name = (from, to, name) => {
     return {
-        from, to, name
+        from, to, name,
+        text: characters_responce[from].shortName + (from == to ? "の一人称" : "→" + characters_responce[to].shortName) + ": " + name
     };
 }
 const Music = (id, title, creators, vocals, date_posted, date_implemented, urls) => {

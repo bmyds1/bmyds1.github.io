@@ -22,6 +22,10 @@ const responces = [
     Responce("haruka", "saki", "天馬さん、いくよ！", "うん、どんどん盛り上げよう！"),
     Responce("saki", "miku_leo", "もっと盛り上げていこう！", "ふふっ、咲希が一番楽しそう！"),
     Responce("miku_leo", "saki", "咲希、楽しんでる？", "うん、すっごく楽しい！"),
+    Responce("saki", "emu", "みんなわんだほいしてる？", "もちろんだっほーい！"),
+    Responce("emu", "saki", "咲希ちゃん、あれいっちゃおう！", "わんわん～、わんだほーい！"),
+    Responce("saki", "nene", "いけいけねねちゃん！", "えむとノリが同じなんだけど…"),
+    Responce("nene", "saki", "あの、よろしく…", "こっちこそよろしく、ねねちゃん！"),
     Responce("saki", "luka", "もっと楽しんじゃおう！", "ええ、その意気よ！"),
     Responce("luka", "saki", "さあ、その調子よ！", "はい、任せてください！"),
     Responce("saki", "meiko", "ガンガンいっちゃおう！", "迷いのない良い音ね！"),
@@ -124,14 +128,24 @@ const responces = [
     Responce("tsukasa", "nene", "ふっ、俺を呼ぶ歓声が聞こえる！", "耳、大丈夫？"),
     Responce("nene", "tsukasa", "しっかり合わせてよ？", "誰に言っている！ 任せろ！"),
     //emu
-    //rui
-    Responce("rui", "nene", "ここからが僕たちの真骨頂だ！", "うん、行くよ、ネネロボ！"),
+    Responce("emu", "nene", "見せ場がきたね！", "ちゃんと決めてみせる！"),
+    Responce("nene", "emu", "このまま、最後まで！", "がんばれがんばれ寧々ちゃん！"),
+    Responce("emu", "rui", "いけいけゴーゴーわんだほーい！", "そうだね、この勢いは大事にしなくては！"),
+    Responce("rui", "emu", "ここからは任せたよ、えむ君！", "はーい！ いくよー、フルパワーわんだほーい！"),
+    Responce("emu", "rin", "たっくさんの笑顔のために！", "私も頑張って歌うね！"),
+    Responce("rin", "emu", "ドキドキする歌だね！", "うん！ 最後まで聞きたいな！"),
+    //nene 
     Responce("nene", "rui", "楽しそうだね", "ふふっ、これだけ盛り上がっていて楽しくないはずがないよ"),
+    Responce("rui", "nene", "ここからが僕たちの真骨頂だ！", "うん、行くよ、ネネロボ！"),
+    Responce("nene", "rin", "わたしだって、これくらい…！", "大丈夫、自分を信じて！"),
+    Responce("rin", "nene", "ここまで絶好調！", "こういうときこそ注意しないと…"),
+    //rui
     Responce("rui", "mizuki", "おや、ずいぶん協力的だね？", "昔馴染みのためだからかな？"),
     Responce("rui", "mizuki", "さて、行こうか瑞希", "オッケー！ イッツ・ショータイム！"),
     Responce("mizuki", "rui", "そろそろボクの出番かな？", "僕のことも忘れてもらっては困るよ？"),
     Responce("mizuki", "rui", "類もカワイイポーズしてみる？", "いやいや、君の株を奪うような真似は出来ないよ"),
-    //nene
+    Responce("rui", "rin", "ショーはまだこれからだよ！", "うん！ どんどん盛り上げちゃおう！"),
+    Responce("rin", "rui", "すっごくいい感じ！", "ああ、お手並み拝見だね"),
     //miku_wonder
     //kanade
     Responce("kanade", "mafuyu", "すごく気持ちのこもった音…", "奏にはそう聞こえるんだね？"),
