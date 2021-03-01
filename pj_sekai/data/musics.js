@@ -974,7 +974,7 @@ const musics = [
         [
             Vocal("virtual", ["miku"])
         ],
-        mDate(2012, 8, 14),
+        null,
         mDate(2020, 12, 24),
         [
             mURL("マジカルミライ2013", "https://www.youtube.com/watch?v=5kEoYWYnIIw")
@@ -1303,6 +1303,94 @@ const musics = [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm38335870"),
             mURL("原曲", "https://www.youtube.com/watch?v=cwLlHFMlBNQ"),
             mURL("3DMV", "https://www.youtube.com/watch?v=kmZnbc4aKUk")
+        ]
+    ),
+    Music(82, "ワンスアポンアドリーム",
+        [
+            Creator("YASUHIRO(康寛)", "ttt"),
+        ],
+        [
+            Vocal("sekai", ["emu", "len", "tsukasa", "nene", "rui"])
+        ],
+        null,
+        mDate(2021, 2, 28),
+        [
+            mURL("2DMV", "https://www.youtube.com/watch?v=qQHBi6_cdi0")
+        ]
+    )
+];
+const futureMusics = [
+    Music(83, "ボッカデラベリタ",
+        [
+            Creator("柊キライ", "ttf"),
+        ],
+        [
+            Vocal("virtual", ["flower"]),
+            Vocal("sekai", ["mafuyu", "mizuki"])
+        ],
+        mDate(2020, 4, 26),
+        null,
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm36731216"),
+            mURL("原曲", "https://www.youtube.com/watch?v=wp9Z2wZ-2bs")
+        ]
+    ),
+    Music(84, "みくみくにしてあげる♪【してやんよ】",
+        [
+            Creator("ika_mo", "ttt")
+        ],
+        [
+            Vocal("virtual", ["miku"])
+        ],
+        mDate(2007, 9, 20),
+        null,
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm1097445")
+        ]
+    ),
+    Music(85, "威風堂々",
+        [
+            Creator("梅とら", "ttt")
+        ],
+        [
+            Vocal("virtual", ["luka", "miku", "gumi", "ia", "rin"]),
+            Vocal("sekai", ["akito", "toya", "kaito"]),
+            Vocal("another", ["akito"]),
+            Vocal("another", ["toya"]),
+            Vocal("another", ["kaito"])
+        ],
+        mDate(2012, 10, 29),
+        null,
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm19233263"),
+            mURL("原曲", "https://www.youtube.com/watch?v=xGNQOqtGU_E")
+        ]
+    ),
+    Music(86, "from Y to Y",
+        [
+            Creator("ジミーサムP", "ttf")
+        ],
+        [
+            Vocal("virtual", ["miku"]),
+            Vocal("sekai", ["ichika", "saki", "honami", "shiho", "miku"]),
+            Vocal("another", ["saki", "shiho"]),
+            Vocal("another", ["ichika", "honami"])
+        ],
+        mDate(2009, 3, 24),
+        null,
+        [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm6529016")
+        ]
+    ),
+    Music(87, "(モモジャン書き下ろし楽曲)",
+        [
+            Creator("DIVELA", "fff")
+        ],
+        [
+        ],
+        null,
+        null,
+        [
         ]
     )
 ];

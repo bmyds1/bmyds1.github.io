@@ -99,6 +99,14 @@ const getMembersFromVocal = (v) => {
 const mDate = (y, m, d) => {
     return new Date(y, m - 1, d);
 }
+const getStrFromDate = (md) => {
+    if (md == null) {
+        return "----/--/--";
+    }
+    else {
+        return md.toLocaleDateString();
+    }
+}
 const mURL = (title, link) => {
     return {
         title, link
@@ -136,5 +144,10 @@ const getCreatorRole = (c) => {
     if (c.isArranger) {
         arr.push("編曲");
     }
-    return arr.join(", ");
+    if (arr.length > 0) {
+        return "(" + arr.join(", ") + ")";
+    }
+    else {
+        return "";
+    }
 }

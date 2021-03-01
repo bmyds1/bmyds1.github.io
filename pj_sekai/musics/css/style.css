@@ -10,3 +10,8 @@ table tr, th, td {
 table th, td {
     padding: 3px 6px;
 }
+
+td.border {
+    font-weight: bold;
+    background-color: lightgray;
+}
