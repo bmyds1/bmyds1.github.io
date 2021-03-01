@@ -63,6 +63,11 @@ const creatorLinks = {
     "ユジー": "https://twitter.com/hsURanus_yuzy",
     "164": "https://twitter.com/164203",
     "キノシタ": "https://twitter.com/k1n0shita",
-    "いるかアイス": "https://twitter.com/irucaice"
+    "いるかアイス": "https://twitter.com/irucaice",
+    "YASUHIRO(康寛)": "https://twitter.com/yasuhiro_vanq",
+    "柊キライ": "https://twitter.com/Kirai_dark",
+    "梅とら": "https://twitter.com/umetorara",
+    "ジミーサムP": "https://twitter.com/jimmythumb",
+    "DIVELA": "https://twitter.com/MIX_Destroy"
 };
 const creatorIds = Object.keys(creatorLinks);
