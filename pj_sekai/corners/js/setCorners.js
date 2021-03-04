@@ -1,9 +1,14 @@
 const setCorners = () => {
-    setCornerSpan("span_leo_everyday", leoEverydayList, "tweet-leo");
+    setCornerSpan("span_leo_everyday", leoEverydayList, "twitter-leo");
     setCornerSpan("span_more_voice", moreVoiceList, "youtube");
     setCornerSpan("span_wonder_channel", wonderChannelList, "youtube");
     setCornerSpan("span_night_radio", nightRadioList, "youtube");
+    setCornerSpan("span_after_talk", afterTalkList, "youtube");
+    setCornerSpan("span_story_theater", storyTheaterList, "youtube");
     setCornerSpan("span_rage", rageList, "youtube");
+    setCornerSpan("span_birthday_img", birthdayImgList, "twitter");
+    document.getElementById("span_countdown_img").appendChild(getAFromURL(mURL("公式モーメント", "https://twitter.com/i/events/1297344743932747776")));
+
     /*
     let script = document.createElement("script");
     script.src = "https://platform.twitter.com/widgets.js";
