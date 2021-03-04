@@ -8,17 +8,17 @@ const Character = (fullName, shortName, unit) => {
         fullName, shortName, unit
     };
 };
-const Responce = (from, to, fromStr, toStr) => {
+const Interaction = (from, to, fromStr, toStr) => {
     return {
         from, to, fromStr, toStr,
-        text: characters_responce[from].shortName + "「" + fromStr + "」\n"
-            + characters_responce[to].shortName + "「" + toStr + "」"
+        text: characters_interaction[from].shortName + "「" + fromStr + "」\n"
+            + characters_interaction[to].shortName + "「" + toStr + "」"
     };
 };
 const Name = (from, to, name) => {
     return {
         from, to, name,
-        text: characters_responce[from].shortName + (from == to ? "の一人称" : "→" + characters_responce[to].shortName) + ": " + name
+        text: characters_interaction[from].shortName + (from == to ? "の一人称" : "→" + characters_interaction[to].shortName) + ": " + name
     };
 };
 const Music = (id, title, creators, vocals, date_posted, date_implemented, urls) => {

@@ -62,7 +62,7 @@ const characters_other = {
 };
 const characterIds = Object.keys(characters);
 const mikuCharacterIds = Object.keys(characters_miku);
-const characters_responce = (function () {
+const characters_interaction = (function () {
     let cArr = {};
     let i = 0;
     let j = 0;
@@ -96,5 +96,5 @@ const characters_responce = (function () {
     }
     return cArr;
 }());
-const responceCharacterIds = Object.keys(characters_responce);
-const allCharacterIds = responceCharacterIds.concat(Object.keys(characters_other));
+const interactionCharacterIds = Object.keys(characters_interaction);
+const allCharacterIds = interactionCharacterIds.concat(Object.keys(characters_other));
