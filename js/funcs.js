@@ -19,9 +19,6 @@ const getP = (text, className = null) => {
 const getLi = (text, className = null) => {
     return getElm("li", text, className);
 }
-const getBr = () => {
-    return document.createElement("br");
-}
 const getElm = (elm, text, className = null) => {
     let d = document.createElement(elm);
     d.innerText = text;
@@ -29,6 +26,20 @@ const getElm = (elm, text, className = null) => {
         d.className = className;
     }
     return d;
+}
+const getBr = () => {
+    return document.createElement("br");
+}
+const getImg = (link, className = null) => {
+    let img = document.createElement("img");
+    img.src = link;
+    if (className != null) {
+        img.className = className;
+    }
+    return img;
+}
+const getDomain = (link) => {
+    return link.replace(/^https*:\/\//, "").split("/")[0];
 }
 const getCheckboxLabel = (name, value, text, isChecked = false) => {
     let label = document.createElement("label");

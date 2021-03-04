@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+}
+
+img.tweet {
+    width: 200px;
+}
+
+img.tweet-leo {
+    width: 250px;
+    height: 250px;
+    object-position: 0 16%;
+    object-fit: cover;
+}
+
+img.youtube {
+    width: 320px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.thumbBlock {
+    float: left;
+    margin: 5px 15px;
+}
+
+.clear {
+    clear: both;
+}
