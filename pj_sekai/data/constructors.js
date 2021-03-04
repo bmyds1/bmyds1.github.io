@@ -20,7 +20,7 @@ const Name = (from, to, name) => {
         from, to, name,
         text: characters_responce[from].shortName + (from == to ? "の一人称" : "→" + characters_responce[to].shortName) + ": " + name
     };
-}
+};
 const Music = (id, title, creators, vocals, date_posted, date_implemented, urls) => {
     return {
         id, title, creators, vocals, date_posted, date_implemented, urls,
@@ -66,7 +66,7 @@ const getUnitsFromVocals = (vs) => {
         return ["virtual", "other"];
     }
     return ["other"];
-}
+};
 const getMainUnitFromUnits = (us) => {
     if (us.length == 1) {
         return us[0];
@@ -82,7 +82,7 @@ const getMainUnitFromUnits = (us) => {
         }
     }
     return "unclassified";
-}
+};
 const getMembersFromVocal = (v) => {
     const header = vocalTypes[v.type].shortName;
     let names = [];
@@ -98,7 +98,7 @@ const getMembersFromVocal = (v) => {
 }
 const mDate = (y, m, d) => {
     return new Date(y, m - 1, d);
-}
+};
 const getStrFromDate = (md) => {
     if (md == null) {
         return "----/--/--";
@@ -106,10 +106,11 @@ const getStrFromDate = (md) => {
     else {
         return md.toLocaleDateString();
     }
-}
+};
 const mURL = (title, link) => {
     return {
-        title, link
+        title, link,
+        domain: getDomain(link)
     }
 };
 const getAFromURL = (u) => {
@@ -124,7 +125,7 @@ const getAFromURL = (u) => {
     img.src = "https://www.google.com/s2/favicons?domain=" + domain;
     span.appendChild(img);
     return span;
-}
+};
 const Creator = (name, part) => {
     return {
         name,
@@ -150,4 +151,9 @@ const getCreatorRole = (c) => {
     else {
         return "";
     }
-}
+};
+const Thumbnail = (title, link, src = null) => {
+    return {
+        title, link, src
+    };
+};
