@@ -140,6 +140,7 @@ const interactions = [
     Interaction("meiko", "miku_vivid", "順調順調！", "私もまだまだ行けるよ！"),
     //tsukasa
     Interaction("tsukasa", "emu", "見ろ！ みんなの笑顔を！", "あたしも思わずわんだほーい！"),
+    Interaction("emu", "tsukasa", "音がキラキラしてるよ！", "ああ、この調子でいくぞ！"),
     Interaction("tsukasa", "nene", "ふっ、オレを呼ぶ歓声が聞こえる！", "耳、大丈夫？"),
     Interaction("nene", "tsukasa", "しっかり合わせてよ？", "誰に言っている！ 任せろ！"),
     Interaction("tsukasa", "rui", "かなり調子いいぞ！", "本当に君は本番に強いねえ！"),
