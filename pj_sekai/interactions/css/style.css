@@ -33,11 +33,11 @@ th.vertical span.verticalText {
     white-space: nowrap;
 }
 
-td.hasResponce {
+td.hasInteraction {
     background-color: aqua;
 }
 
-td.noResponce {
+td.noInteraction {
     background-color: lightgray;
 }
 
@@ -45,7 +45,7 @@ td.intersection {
     background-color: dimgray;
 }
 
-td.tdResponce span.responceText {
+td.tdInteraction span.interactionText {
     display: none;
     position: absolute;
     top: 35px;
@@ -56,19 +56,19 @@ td.tdResponce span.responceText {
     z-index: 1;
 }
 
-td.tdResponce span.responceTextLeft {
+td.tdInteraction span.interactionTextLeft {
     left: 35px;
 }
 
-td.tdResponce span.responceTextRight {
+td.tdInteraction span.interactionTextRight {
     right: 35px;
 }
 
-td.hasResponce:hover {
+td.hasInteraction:hover {
     background-color: orange;
 }
 
-td.noResponce:hover {
+td.noInteraction:hover {
     background-color: gray;
 }
 
@@ -76,6 +76,6 @@ td.intersection:hover {
     background-color: black;
 }
 
-td.tdResponce:hover span.responceText {
+td.tdInteraction:hover span.interactionText {
     display: block;
 }

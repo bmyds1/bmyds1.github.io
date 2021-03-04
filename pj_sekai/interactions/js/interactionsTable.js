@@ -13,7 +13,7 @@ const initSelect = () => {
     div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", true));
     div_option.appendChild(getCheckboxLabel("option", "dispName", "各キャラクターの一人称も表示する", true));
 }
-const initResponcesTable = () => {
+const initInteractionsTable = () => {
     resetElement("table");
     const form = document.getElementById("form");
     let table = document.getElementById("table");
@@ -55,26 +55,24 @@ const initResponcesTable = () => {
         let cNumTmp = 0;
         for (let j in characters_to) {
             let tdEach = document.createElement("td");
-            let responceTexts = getResponceTexts(i, j, options);
-            if (responceTexts != null) {
+            let interactionTexts = getInteractionTexts(i, j, options);
+            if (interactionTexts != null) {
                 tdEach.innerText = "*";
-                tdEach.className = "tdResponce hasResponce";
-                let spanResponce = document.createElement("span");
-                spanResponce.innerText = responceTexts;
-                //spanResponce.className = "responceText";
+                tdEach.className = "tdInteraction hasInteraction";
+                let spanInteraction = getSpan(interactionTexts);
                 if (cNumTmp < 12) {
-                    spanResponce.className = "responceText responceTextLeft";
+                    spanInteraction.className = "interactionText interactionTextLeft";
                 }
                 else {
-                    spanResponce.className = "responceText responceTextRight";
+                    spanInteraction.className = "interactionText interactionTextRight";
                 }
-                tdEach.appendChild(spanResponce);
+                tdEach.appendChild(spanInteraction);
             }
             else {
-                tdEach.className = "tdResponce noResponce";
+                tdEach.className = "tdInteraction noInteraction";
             }
             if (isIntersection(i, j)) {
-                tdEach.className = "tdResponce intersection";
+                tdEach.className = "tdInteraction intersection";
             }
             trRow.appendChild(tdEach);
             ++cNumTmp;
@@ -85,7 +83,7 @@ const initResponcesTable = () => {
 }
 const getCharactersByUnits = (units, options) => {
     let arr = {};
-    let baseArr = JSON.parse(JSON.stringify(options.distMiku ? characters_responce : characters));
+    let baseArr = JSON.parse(JSON.stringify(options.distMiku ? characters_interaction : characters));
     for (let i in baseArr) {
         if (units[baseArr[i].unit]) {
             arr[i] = baseArr[i];
@@ -93,7 +91,7 @@ const getCharactersByUnits = (units, options) => {
     }
     return arr;
 }
-const getResponceTexts = (from, to, options) => {
+const getInteractionTexts = (from, to, options) => {
     let arr = [];
     if (options.dispName) {
         for (let n of names) {
@@ -104,7 +102,7 @@ const getResponceTexts = (from, to, options) => {
             }
         }
     }
-    for (let r of responces) {
+    for (let r of interactions) {
         let rFrom = r.from;
         let rTo = r.to;
         if (!options.distMiku) {
