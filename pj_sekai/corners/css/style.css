@@ -2,11 +2,17 @@ body {
     font-family: sans-serif;
 }
 
-img.tweet {
-    width: 200px;
+table#toc th {
+    text-align: left;
 }
 
-img.tweet-leo {
+img.twitter {
+    width: 300px;
+    height: 168px;
+    object-fit: cover;
+}
+
+img.twitter-leo {
     width: 250px;
     height: 250px;
     object-position: 0 16%;
