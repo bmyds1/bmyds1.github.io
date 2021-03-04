@@ -1,1 +1,0 @@
-# bmyds1.github.io
