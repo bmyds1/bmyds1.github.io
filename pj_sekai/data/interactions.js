@@ -1,4 +1,40 @@
 const interactions = [
+    //miku
+    Interaction("miku", "rin", "この歌をみんなに！", "きっと届くはずだよ！"),
+    Interaction("rin", "miku", "この調子でゴーゴー！", "うん！ いいステージになりそうだね！"),
+    Interaction("miku", "len", "もっとみんなと歌っていたいな！", "オレもだよ！ このまま、ずっと、ずーっと！"),
+    Interaction("len", "miku", "この調子でノっていこう！", "ふふ、オッケー！"),
+    Interaction("miku", "luka", "いいテンポできてるね！", "ええ、でも気を抜いてはダメよ？"),
+    Interaction("luka", "miku", "ミク、私たちも頑張りましょ！", "うん！ この歌が、みんなに届くように！"),
+    Interaction("miku", "meiko", "みんなの想いが、伝わってくる！", "ええ、きっと最高のステージになるわ！"),
+    Interaction("meiko", "miku", "ミク、いい感じみたいね！", "うん！ この調子で、しっかり歌を届けるよ！"),
+    Interaction("miku", "kaito", "ここからだね、KAITO！", "僕たちのいいところ、見せないとね！"),
+    Interaction("kaito", "miku", "みんないい顔してるね！", "きっと、素敵なステージになるよ！"),
+    //rin
+    Interaction("rin", "len", "みんなノリノリだね！", "あっはは、そういう自分だって！"),
+    Interaction("len", "rin", "オレたちで最高のステージにしよう！", "もちろん！ いくよ、レン！"),
+    Interaction("rin", "luka", "綺麗な音があふれてるよ！", "ええ、この流れ、大事にしたいわ！"),
+    Interaction("luka", "rin", "その調子よ、リン！", "ありがとうルカ！ でもまだまだいけるよ！"),
+    Interaction("rin", "meiko", "ここまでは順調かな？", "うん、すごくよく歌えてるわ！"),
+    Interaction("meiko", "rin", "リン？ ちゃんとついてきてる？", "もちろん！ 私も盛り上げるよ！"),
+    Interaction("rin", "kaito", "これが私たちの実力だよ！", "あはは、頼もしいね！"),
+    Interaction("kaito", "rin", "リズムもテンポも最高だね！", "うん！ 私もノってきたよ！"),
+    //len
+    Interaction("len", "luka", "最後までこの調子でいこう！", "ええ、私も協力するわ！"),
+    Interaction("luka", "len", "頑張ってるわね、レン！", "へへっ、もっと褒めてくれてもいいよ？"),
+    Interaction("len", "meiko", "へへっ、順調順調！", "まったく… 油断大敵よ？"),
+    Interaction("meiko", "len", "いい調子できてるわね！", "でしょでしょ？"),
+    Interaction("len", "kaito", "KAITOもちゃーんとついてきてよ？", "大丈夫！ 任せてほしいな！"),
+    Interaction("kaito", "len", "ここからが、大事なところだね！", "オレたちなら大丈夫だって！"),
+    //luka
+    Interaction("luka", "meiko", "そろそろ私たちの見せ場かしら？", "カッコいいところ見せちゃいましょ！"),
+    Interaction("meiko", "luka", "私たちでもっとみんなを引っ張っていくわよ！", "ええ、行きましょう、MEIKO！"),
+    Interaction("luka", "kaito", "ここまで順調ね、流石だわ", "僕だけじゃなくて、みんなのおかげだよ！"),
+    Interaction("kaito", "luka", "そろそろ僕たちも活躍しないとね！", "ええ、そうしましょう！"),
+    //meiko
+    Interaction("meiko", "kaito", "こんなもんじゃないでしょ、KAITO？", "もちろん！ まだまだいけるさ！"),
+    Interaction("kaito", "meiko", "すごい！ ここまでいい感じだね！", "そうね、このままラストスパートよ！"),
+    //kaito
     //ichika
     Interaction("ichika", "saki", "咲希、ここからだよ！", "もっちろん！ あげてこー！"),
     Interaction("saki", "ichika", "みんな楽しそう！ 青春っぽい！", "もう、咲希ってば、はしゃぎすぎ！"),
@@ -181,18 +217,6 @@ const interactions = [
     Interaction("mizuki", "mafuyu", "部屋で撮るだけじゃこの空気は味わえないね！", "そうだね。悪く、ないかも…"),
     //ena
     Interaction("ena", "mizuki", "私、注目されちゃってる！？", "はいはい、よかったねー"),
-    Interaction("mizuki", "ena", "えななんの本気が見てみたーい！", "ちょっと、逆に調子狂うでしょ？"),
+    Interaction("mizuki", "ena", "えななんの本気が見てみたーい！", "ちょっと、逆に調子狂うでしょ？")
     //mizuki
-    //miku
-    //rin
-    Interaction("rin", "luka", "綺麗な音があふれてるよ！", "ええ、この流れ、大事にしたいわ！"),
-    Interaction("luka", "rin", "その調子よ、リン！", "ありがとうルカ！ でもまだまだいけるよ！"),
-    //len
-    Interaction("len", "meiko", "へへっ、順調順調！", "まったく… 油断大敵よ？"),
-    Interaction("meiko", "len", "いい調子できてるわね！", "でしょでしょ？"),
-    //luka
-    Interaction("luka", "meiko", "そろそろ私たちの見せ場かしら？", "カッコいいところ見せちゃいましょ！"),
-    Interaction("meiko", "luka", "私たちでもっとみんなを引っ張っていくわよ！", "ええ、行きましょう、MEIKO！")
-    //meiko
-    //kaito
 ];
