@@ -12,7 +12,7 @@ img.twitter {
     object-fit: cover;
 }
 
-img.twitter-leo {
+img.twitterLeo {
     width: 250px;
     height: 250px;
     object-position: 0 16%;
@@ -27,7 +27,14 @@ img.youtube {
 
 .thumbBlock {
     display: inline-block;
+    vertical-align: bottom;
     margin: 5px 15px;
+}
+
+.showRemain {
+    display: inline-block;
+    background-color: lightblue;
+    padding: 5px;
 }
 
 .clear {
