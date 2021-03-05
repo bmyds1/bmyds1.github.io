@@ -1,15 +1,15 @@
 const initPostLen = 5;
 const setPosts = () => {
-    setPostSpan("span_leo_everyday", leoEverydayList, "twitterLeo");
-    setPostSpan("span_more_voice", moreVoiceList, "youtube");
-    setPostSpan("span_wonder_channel", wonderChannelList, "youtube");
-    setPostSpan("span_night_radio", nightRadioList, "youtube");
-    setPostSpan("span_after_talk", afterTalkList, "youtube");
-    setPostSpan("span_story_theater", storyTheaterList, "youtube");
-    setPostSpan("span_rage", rageList, "youtube");
-    setPostSpan("span_birthday_img", birthdayImgList, "twitter");
+    setPostSpan("leo_everyday", leoEverydayList, "twitterLeo");
+    setPostSpan("more_voice", moreVoiceList, "youtube");
+    setPostSpan("wonder_channel", wonderChannelList, "youtube");
+    setPostSpan("night_radio", nightRadioList, "youtube");
+    setPostSpan("after_talk", afterTalkList, "youtube");
+    setPostSpan("story_theater", storyTheaterList, "youtube");
+    setPostSpan("rage", rageList, "youtube");
+    setPostSpan("birthday_img", birthdayImgList, "twitter");
     document.getElementById("span_countdown_img").appendChild(getAFromURL(mURL("公式モーメント", "https://twitter.com/i/events/1297344743932747776")));
-    setPostSpan("span_anniversary_img", anniversaryImgList, "twitter");
+    setPostSpan("anniversary_img", anniversaryImgList, "twitter");
     /*
     let script = document.createElement("script");
     script.src = "https://platform.twitter.com/widgets.js";
@@ -17,14 +17,14 @@ const setPosts = () => {
     */
 };
 const setPostSpan = (id, list, className) => {
-    let pSpan = document.getElementById(id);
+    let pSpan = document.getElementById("span_" + id);
     for (let l of list.slice(0, Math.min(list.length, initPostLen))) {
         pSpan.appendChild(getSpanFromThumbnail(l, className));
     }
     if (list.length > initPostLen) {
         let rSpan = document.createElement("span");
         rSpan.className = "thumbBlock";
-        rSpan.id = id + "_showRemain";
+        rSpan.id = getShowRemainId(id);
         let a = document.createElement("a");
         a.className = "showRemain";
         a.innerText = "残り" + (list.length - initPostLen) + "件を表示する";
@@ -37,13 +37,14 @@ const setPostSpan = (id, list, className) => {
     pSpan.appendChild(getClearDiv(id));
 };
 const setRemainPostSpan = (id, list, className) => {
-    let pSpan = document.getElementById(id);
-    pSpan.removeChild(document.getElementById(id + "_showRemain"));
-    pSpan.removeChild(document.getElementById(id + "_clear"));
+    let pSpan = document.getElementById("span_" + id);
+    let clearDiv = document.getElementById(getClearDivId(id));
+    //pSpan.removeChild(document.getElementById(id + "_showRemain"));
+    //pSpan.removeChild(document.getElementById(id + "_clear"));
     for (let l of list.slice(initPostLen)) {
-        pSpan.appendChild(getSpanFromThumbnail(l, className));
+        pSpan.insertBefore(getSpanFromThumbnail(l, className), clearDiv);
     }
-    pSpan.appendChild(getClearDiv(id));
+    document.getElementById(getShowRemainId(id)).style.display = "none";
 }
 const getSpanFromThumbnail = (t, className) => {
     let span = document.createElement("span");
@@ -84,9 +85,17 @@ const getSpanFromThumbnail = (t, className) => {
     span.appendChild(a);
     return span;
 }
-const getClearDiv = (id) => {
+const getClearDiv = (id = null) => {
     let div = document.createElement("div");
     div.className = "clear";
-    div.id = id + "_clear";
+    if (id != null) {
+        div.id = getClearDivId(id);
+    }
     return div;
+}
+const getShowRemainId = (id) => {
+    return id + "_showRemain";
+}
+const getClearDivId = (id) => {
+    return id + "_clear";
 }
