@@ -1317,9 +1317,7 @@ const musics = [
         [
             mURL("2DMV", "https://www.youtube.com/watch?v=qQHBi6_cdi0")
         ]
-    )
-];
-const futureMusics = [
+    ),
     Music(83, "ボッカデラベリタ",
         [
             Creator("柊キライ", "ttf"),
@@ -1329,12 +1327,15 @@ const futureMusics = [
             Vocal("sekai", ["mafuyu", "mizuki"])
         ],
         mDate(2020, 4, 26),
-        null,
+        mDate(2021, 3, 6),
         [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm36731216"),
             mURL("原曲", "https://www.youtube.com/watch?v=wp9Z2wZ-2bs")
         ]
-    ),
+    )
+];
+const futureMusics = [
+
     Music(84, "みくみくにしてあげる♪【してやんよ】",
         [
             Creator("ika_mo", "ttt")
