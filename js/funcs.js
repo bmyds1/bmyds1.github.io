@@ -38,6 +38,12 @@ const getImg = (link, className = null) => {
     }
     return img;
 }
+const getA = (text, link, className = null) => {
+    let a = getElm("a", text, className);
+    a.href = link;
+    a.target = "_blank";
+    return a;
+}
 const getDomain = (link) => {
     return link.replace(/^https*:\/\//, "").split("/")[0];
 }
