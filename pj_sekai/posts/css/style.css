@@ -27,14 +27,16 @@ img.youtube {
 
 .thumbBlock {
     display: inline-block;
-    vertical-align: bottom;
+    vertical-align: top;
     margin: 5px 15px;
 }
 
-.showRemain {
+.showRemainBlock {
     display: inline-block;
+    vertical-align: bottom;
+    margin: 5px 15px;
+    padding: 5px 15px;
     background-color: lightblue;
-    padding: 5px;
 }
 
 .clear {
