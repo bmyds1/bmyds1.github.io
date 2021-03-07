@@ -6,6 +6,7 @@ const setPosts = () => {
     setPostSpan("night_radio", nightRadioList, "youtube");
     setPostSpan("after_talk", afterTalkList, "youtube");
     setPostSpan("story_theater", storyTheaterList, "youtube");
+    setPostSpan("four_frame", fourFrameList, "twitter4Frame");
     setPostSpan("rage", rageList, "youtube");
     setPostSpan("birthday_img", birthdayImgList, "twitter");
     document.getElementById("span_countdown_img").appendChild(getAFromURL(mURL("公式モーメント", "https://twitter.com/i/events/1297344743932747776")));
