@@ -14,6 +14,7 @@ const wonderChannelList = [
     Thumbnail("#1", "https://www.youtube.com/watch?v=WL80cao8mSY"),
 ];
 const nightRadioList = [
+    Thumbnail("#10", "https://www.youtube.com/watch?v=g_3Pm92Lbz4"),
     Thumbnail("#9", "https://www.youtube.com/watch?v=_xjJ1VjBV8w"),
     Thumbnail("#8", "https://www.youtube.com/watch?v=6wXL3UnXx9A"),
     Thumbnail("#7", "https://www.youtube.com/watch?v=sDlueZcrG48"),

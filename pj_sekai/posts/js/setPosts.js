@@ -23,15 +23,12 @@ const setPostSpan = (id, list, className) => {
     }
     if (list.length > initPostLen) {
         let rSpan = document.createElement("span");
-        rSpan.className = "thumbBlock";
+        rSpan.className = "showRemainBlock";
         rSpan.id = getShowRemainId(id);
-        let a = document.createElement("a");
-        a.className = "showRemain";
-        a.innerText = "残り" + (list.length - initPostLen) + "件を表示する";
-        a.onclick = function () {
+        rSpan.innerText = "残り" + (list.length - initPostLen) + "件を表示する";
+        rSpan.onclick = function () {
             setRemainPostSpan(id, list, className);
         };
-        rSpan.appendChild(a);
         pSpan.appendChild(rSpan);
     }
     pSpan.appendChild(getClearDiv(id));
