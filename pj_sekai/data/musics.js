@@ -1312,9 +1312,11 @@ const musics = [
         [
             Vocal("sekai", ["emu", "len", "tsukasa", "nene", "rui"])
         ],
-        null,
+        mDate(2021, 3, 8),
         mDate(2021, 2, 28),
         [
+            mURL("原曲", "https://www.nicovideo.jp/watch/sm38385642"),
+            mURL("原曲", "https://www.youtube.com/watch?v=S84mvlha5Fc"),
             mURL("2DMV", "https://www.youtube.com/watch?v=qQHBi6_cdi0")
         ]
     ),
@@ -1335,7 +1337,6 @@ const musics = [
     )
 ];
 const futureMusics = [
-
     Music(84, "みくみくにしてあげる♪【してやんよ】",
         [
             Creator("ika_mo", "ttt")
