@@ -1,4 +1,5 @@
-const initPostLen = 5;
+const maxInitPostLen = 5;
+const initPostLen = 3;
 const setPosts = () => {
     setPostSpan("leo_everyday", leoEverydayList, "twitterLeo");
     setPostSpan("more_voice", moreVoiceList, "youtube");
@@ -19,10 +20,11 @@ const setPosts = () => {
 };
 const setPostSpan = (id, list, className) => {
     let pSpan = document.getElementById("span_" + id);
-    for (let l of list.slice(0, Math.min(list.length, initPostLen))) {
+    let len = list.length > maxInitPostLen ? initPostLen : list.length;
+    for (let l of list.slice(0, len)) {
         pSpan.appendChild(getSpanFromThumbnail(l, className));
     }
-    if (list.length > initPostLen) {
+    if (list.length > maxInitPostLen) {
         let rSpan = document.createElement("span");
         rSpan.className = "showRemainBlock";
         rSpan.id = getShowRemainId(id);
@@ -43,7 +45,7 @@ const setRemainPostSpan = (id, list, className) => {
         pSpan.insertBefore(getSpanFromThumbnail(l, className), clearDiv);
     }
     document.getElementById(getShowRemainId(id)).style.display = "none";
-}
+};
 const getSpanFromThumbnail = (t, className) => {
     let span = document.createElement("span");
     span.className = "thumbBlock";
@@ -82,7 +84,7 @@ const getSpanFromThumbnail = (t, className) => {
     a.appendChild(getImg(src, className));
     span.appendChild(a);
     return span;
-}
+};
 const getClearDiv = (id = null) => {
     let div = document.createElement("div");
     div.className = "clear";
@@ -90,10 +92,48 @@ const getClearDiv = (id = null) => {
         div.id = getClearDivId(id);
     }
     return div;
-}
+};
 const getShowRemainId = (id) => {
     return id + "_showRemain";
-}
+};
 const getClearDivId = (id) => {
     return id + "_clear";
+};
+/*
+const initToc = () => {
+    resetElement("toc");
+    let t = document.getElementById("toc");
+    let thName = null;
+    let aArr = [];
+    for (let tag of document.getElementById("content").childNodes) {
+        let tagName = tag.tagName;
+        if (typeof tagName == "undefined") {
+            continue;
+        }
+        switch (tagName.toLowerCase()) {
+            case "h2":
+                if (thName != null) {
+                    t.appendChild(getTocTr(thName, aArr));
+                }
+                thName = tag.innerText;
+                aArr = [];
+                break;
+            case "h3":
+                console.log("h3");
+                aArr.push(getA(tag.innerText, "#" + tag.id));
+                break;
+        }
+    }
+    if (thName != null) {
+        t.appendChild(getTocTr(thName, aArr));
+    }
+};
+const getTocTr = (thName, aArr) => {
+    let tr = document.createElement("tr");
+    tr.appendChild(getTh(thName));
+    let td = document.createElement("td");
+    td.appendChild(concatElms(aArr, getSpan(" / ")));
+    tr.appendChild(td);
+    return tr;
 }
+*/

@@ -27,6 +27,7 @@ const nightRadioList = [
 
 ];
 const afterTalkList = [
+    Thumbnail("スマイルオブドリーマー", "https://www.youtube.com/watch?v=ud2GUOM31JY"),
     Thumbnail("満たされないペイルカラー", "https://www.youtube.com/watch?v=n0zwWXZ4WLs")
 ];
 const storyTheaterList = [
