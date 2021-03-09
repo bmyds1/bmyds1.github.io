@@ -1334,9 +1334,7 @@ const musics = [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm36731216"),
             mURL("原曲", "https://www.youtube.com/watch?v=wp9Z2wZ-2bs")
         ]
-    )
-];
-const futureMusics = [
+    ),
     Music(84, "みくみくにしてあげる♪【してやんよ】",
         [
             Creator("ika_mo", "ttt")
@@ -1345,11 +1343,13 @@ const futureMusics = [
             Vocal("virtual", ["miku"])
         ],
         mDate(2007, 9, 20),
-        null,
+        mDate(2021, 3, 9),
         [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm1097445")
         ]
-    ),
+    )
+];
+const futureMusics = [
     Music(85, "威風堂々",
         [
             Creator("梅とら", "ttt")
