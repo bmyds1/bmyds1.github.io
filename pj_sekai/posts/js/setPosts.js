@@ -7,6 +7,7 @@ const setPosts = () => {
     setPostSpan("night_radio", nightRadioList, "youtube");
     setPostSpan("after_talk", afterTalkList, "youtube");
     setPostSpan("story_theater", storyTheaterList, "youtube");
+    setPostSpan("live", liveList, "youtube");
     setPostSpan("four_frame", fourFrameList, "twitter4Frame");
     setPostSpan("rage", rageList, "youtube");
     setPostSpan("birthday_img", birthdayImgList, "twitter");

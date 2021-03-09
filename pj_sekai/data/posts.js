@@ -37,6 +37,9 @@ const storyTheaterList = [
     Thumbnail("MORE MORE JUMP！", "https://www.youtube.com/watch?v=nTQr_XYpLlo"),
     Thumbnail("Leo/need", "https://www.youtube.com/watch?v=WIbFxoWWD28")
 ];
+const liveList = [
+    Thumbnail("もうすぐハーフアニバーサリー生放送", "https://www.youtube.com/watch?v=Z5oRoWyja3k")
+];
 const rageList = [
     Thumbnail("第1回大会(2020 Winter)", "https://www.youtube.com/watch?v=P8QTYVL-JS8")
 ];
@@ -148,7 +151,9 @@ const birthdayImgList = [
     Thumbnail("MEIKO(2019/11/5)", "https://twitter.com/pj_sekai/status/1191369678582472706",
         "https://pbs.twimg.com/media/EIiVAUzU4AE2zfI?format=png&name=900x900")
 ];
-const anniversaryImgList = [ //until:2020-12-1
+const anniversaryImgList = [
+    Thumbnail("ミクの日(2021/3/9)", "https://twitter.com/pj_sekai/status/1368939605177724928",
+        "https://pbs.twimg.com/media/Ev9y7WyUYAQprf_?format=jpg&name=900x900"),
     Thumbnail("バレンタイン(2021/2/14)", "https://twitter.com/pj_sekai/status/1360785914071420928",
         "https://pbs.twimg.com/media/EuJ7A_vUcAAElEO?format=jpg&name=900x900"),
     Thumbnail("ユーザー数300万人(2021/2/7)", "https://twitter.com/pj_sekai/status/1358249535101755392",
