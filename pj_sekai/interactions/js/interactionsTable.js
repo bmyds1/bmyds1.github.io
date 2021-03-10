@@ -10,7 +10,7 @@ const initSelect = () => {
     resetElement("div_option");
     let div_option = document.getElementById("div_option");
     div_option.appendChild(getCheckboxLabel("option", "distFromTo", "どちらから話しかけたかを区別して表を作成する", true));
-    div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", true));
+    div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", false));
     div_option.appendChild(getCheckboxLabel("option", "dispName", "各キャラクターの一人称も表示する", true));
 }
 const initInteractionsTable = () => {
