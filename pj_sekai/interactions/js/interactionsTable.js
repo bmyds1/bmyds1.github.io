@@ -12,6 +12,7 @@ const initSelect = () => {
     div_option.appendChild(getCheckboxLabel("option", "distFromTo", "どちらから話しかけたかを区別して表を作成する", true));
     div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", false));
     div_option.appendChild(getCheckboxLabel("option", "dispName", "各キャラクターの一人称も表示する", true));
+    div_option.appendChild(getCheckboxLabel("option", "dispDefaultInteractions", "特殊な関係性が無い場合のセリフも表示する", true));
 }
 const initInteractionsTable = () => {
     resetElement("table");
@@ -99,21 +100,40 @@ const getInteractionTexts = (from, to, options) => {
             let nTo = n.to;
             if (nFrom == from && nTo == to) {
                 arr.push(n.text);
+                break;
             }
         }
     }
-    for (let r of interactions) {
-        let rFrom = r.from;
-        let rTo = r.to;
-        if (!options.distMiku) {
-            rFrom = convMiku(rFrom);
-            rTo = convMiku(rTo);
+    if (from == to && options.dispDefaultInteractions) {
+        let defArr0 = [];
+        let defArr1 = [];
+        for (let r of interactions) {
+            let rFrom = options.distMiku ? r.from : r.fromC;
+            let rTo = options.distMiku ? r.to : r.toC;
+            if (rFrom == from && rTo == null) {
+                defArr0.push(r.text);
+            }
+            if (rFrom == null && rTo == to) {
+                defArr1.push(r.text);
+            }
         }
-        if (rFrom == from && rTo == to) {
-            arr.push(r.text);
+        if (defArr0.length > 0) {
+            arr.push("デフォルト(From)\n" + defArr0.join("\n"));
         }
-        else if (!options.distFromTo && rFrom == to && rTo == from) {
-            arr.push(r.text);
+        if (defArr1.length > 0) {
+            arr.push("デフォルト(To)\n" + defArr1.join("\n"));
+        }
+    }
+    else {
+        for (let r of interactions) {
+            let rFrom = options.distMiku ? r.from : r.fromC;
+            let rTo = options.distMiku ? r.to : r.toC;
+            if (rFrom == from && rTo == to) {
+                arr.push(r.text);
+            }
+            else if (!options.distFromTo && rFrom == to && rTo == from) {
+                arr.push(r.text);
+            }
         }
     }
     if (arr.length == 0) {
@@ -123,12 +143,4 @@ const getInteractionTexts = (from, to, options) => {
 }
 const isIntersection = (from, to) => {
     return (from == to) || (from.match(/^miku/) && to.match(/^miku/));
-}
-const convMiku = (name) => {
-    if (name.match(/^miku_/)) {
-        return "miku";
-    }
-    else {
-        return name;
-    }
 }

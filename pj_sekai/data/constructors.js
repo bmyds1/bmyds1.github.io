@@ -11,9 +11,30 @@ const Character = (fullName, shortName, unit) => {
 const Interaction = (from, to, fromStr, toStr) => {
     return {
         from, to, fromStr, toStr,
-        text: characters_interaction[from].shortName + "「" + fromStr + "」\n"
-            + characters_interaction[to].shortName + "「" + toStr + "」"
+        fromC: convMiku(from), toC: convMiku(to),
+        text: getInteractionText(from, to, fromStr, toStr)
     };
+};
+const getInteractionText = (from, to, fromStr, toStr) => {
+    let strArr = [];
+    if (from != null) {
+        strArr.push(characters_interaction[from].shortName + "「" + fromStr + "」");
+    }
+    if (to != null) {
+        strArr.push(characters_interaction[to].shortName + "「" + toStr + "」");
+    }
+    return strArr.join("\n");
+}
+const convMiku = (name) => {
+    if (name == null) {
+        return null;
+    }
+    if (name.match(/^miku_/)) {
+        return "miku";
+    }
+    else {
+        return name;
+    }
 };
 const Name = (from, to, name) => {
     return {
