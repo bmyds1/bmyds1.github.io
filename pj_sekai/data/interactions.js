@@ -15,6 +15,10 @@ const interactions = [
     Interaction("miku", "kaito", "ここからだね、KAITO！", "僕たちのいいところ、見せないとね！"),
     Interaction("kaito", "miku", "みんないい顔してるね！", "きっと、素敵なステージになるよ！"),
     //rin
+    Interaction("rin", null, "いいね、ノってきたよ！", ""),
+    Interaction("rin", null, "いいじゃんいいじゃん！", ""),
+    Interaction(null, "rin", "", "うん！ もっといけそうだね！"),
+    Interaction(null, "rin", "", "私も頑張っちゃうよ！"),
     Interaction("rin", "len", "みんなノリノリだね！", "あっはは、そういう自分だって！"),
     Interaction("len", "rin", "オレたちで最高のステージにしよう！", "もちろん！ いくよ、レン！"),
     Interaction("rin", "luka", "綺麗な音があふれてるよ！", "ええ、この流れ、大事にしたいわ！"),
@@ -46,6 +50,7 @@ const interactions = [
     //ichika
     Interaction("ichika", null, "いいね、その調子", ""),
     Interaction("ichika", null, "ここで失敗なんてできないね", ""),
+    Interaction("ichika", null, "私たちの音、もっと響け！", ""),
     Interaction(null, "ichika", "", "私も続かないと！"),
     Interaction("ichika", "saki", "咲希、ここからだよ！", "もっちろん！ あげてこー！"),
     Interaction("saki", "ichika", "みんな楽しそう！ 青春っぽい！", "もう、咲希ってば、はしゃぎすぎ！"),
@@ -64,6 +69,9 @@ const interactions = [
     Interaction("ichika", "meiko", "ここは走りすぎないように…", "ええ、その調子よ！"),
     Interaction("meiko", "ichika", "みんなの歌、もっと聞かせて！", "うん、私も聞いてほしい！"),
     //saki
+    Interaction("saki", null, "この調子ならいける！", ""),
+    Interaction("saki", null, "一気に盛り上げていこう！", ""),
+    Interaction(null, "saki", "", "いよーし、ノってきた！"),
     Interaction("saki", "honami", "アタシの想い、この音に乗せて！", "うん！ みんなに届くように！"),
     Interaction("honami", "saki", "わたしがみんなを引っ張る！", "お！ ほなちゃんカッコいい！"),
     Interaction("saki", "shiho", "笑顔だよ、しほちゃん！", "演奏には関係ない…"),
@@ -118,12 +126,15 @@ const interactions = [
     Interaction("meiko", "shiho", "この一体感、最高ね！", "うん、私も好き…！"),
     //miku_leo
     Interaction("miku_leo", null, "こんなにいい演奏になるなんて！", ""),
+    Interaction("miku_leo", null, "まだまだいけそうだね！", ""),
     Interaction(null, "miku_leo", "", "いいね、もっと盛り上げていこう！"),
     Interaction(null, "miku_leo", "", "うん、その調子！"),
     Interaction("miku_leo", "luka", "みんな、いい調子だね！", "ふふ、最後までこの調子でいきたいわね"),
     //Interaction("luka", "miku_leo", "みんな、すごくいい感じね！", "いいね、もっと盛り上げていこう！"),
     //minori
     Interaction("minori", null, "すっごくいい調子！", ""),
+    Interaction("minori", null, "ステージの端まで届けー！", ""),
+    Interaction(null, "minori", "", "このままリズムに乗っていこう！"),
     Interaction("minori", "haruka", "L・O・V・E、遥！", "み、みのりの応援がすごい…"),
     Interaction("haruka", "minori", "私たちの想いを、みんなに！", "大丈夫、きっと伝わるよ！"),
     Interaction("minori", "airi", "愛莉ちゃん、絶好調だね！", "当たり前よ、ステージの上だもの！"),
@@ -175,9 +186,12 @@ const interactions = [
     Interaction("luka", "shizuku", "みんなの歌が響き渡ってるわね！", "ファンのみんなにも届いてるかしら？"),
     //miku_more
     Interaction("miku_more", null, "みんな！盛り上がってるね！", ""),
+    Interaction("miku_more", null, "最高のステージにするために！", ""),
+    Interaction(null, "miku_more", "", "やっぱり、歌うって楽しいね！"),
     Interaction("miku_more", "rin", "盛り上がってきてるね！", "うん！ でも、まだまだこれからだよ！"),
     //kohane
     Interaction("kohane", null, "みんなをドキドキさせる歌を！", ""),
+    Interaction("kohane", null, "やるって決めたもん、諦めない！", ""),
     Interaction(null, "kohane", "", "大丈夫、私たちならできるよ！"),
     Interaction(null, "kohane", "", "うん！ 私ももっと頑張る！"),
     Interaction("kohane", "an", "このドキドキ、杏ちゃんも感じてる？", "もちろん！ でももっとドキドキさせてあげる！"),
@@ -195,6 +209,7 @@ const interactions = [
     Interaction("kohane", "meiko", "MEIKOさん、一緒に！", "ええ、思いっきり歌いましょう！"),
     Interaction("meiko", "kohane", "私も行こうかしら！", "MEIKOさんの歌、楽しみです！"),
     //an
+    Interaction(null, "an", "", "私もまだまだ行けるよ！"),
     Interaction("an", "akito", "お手並み拝見！", "はっ、じゃあ見てな！"),
     Interaction("akito", "an", "見てろ、ここからだ！", "いいね、絶好調じゃん！"),
     Interaction("an", "toya", "冬弥ももっと楽しんだら？", "十分そうしてるつもりだが…"),
@@ -241,11 +256,14 @@ const interactions = [
     Interaction("meiko", "toya", "いい調子で来てるわね！", "みんなのお陰ですね"),
     //miku_vivid
     Interaction("miku_vivid", null, "いい調子だね！", ""),
+    Interaction("miku_vivid", null, "さあ、どんどんいくよ！", ""),
     Interaction(null, "miku_vivid", "", "私もまだまだ行けるよ！"),
+    Interaction(null, "miku_vivid", "", "いいね、私もノってきた！"),
     Interaction("miku_vivid", "len", "いいね！ ちょっとアドリブ入れたくなる！", "って言いながらもう入れてるし！"),
     Interaction("miku_vivid", "meiko", "かなりいい調子だね！", "ふふ、ミクもすっかりノリノリだもんね！"),
     //Interaction("meiko", "miku_vivid", "順調順調！", "私もまだまだ行けるよ！"),
     //tsukasa
+    Interaction("tsukasa", null, "オレの真の実力を見せてやろう！", ""),
     Interaction(null, "tsukasa", "", "ああ！ 調子が上がってきたな！"),
     Interaction(null, "tsukasa", "", "よし、最後まで畳みかける！"),
     Interaction("tsukasa", "emu", "見ろ！ みんなの笑顔を！", "あたしも思わずわんだほーい！"),
@@ -301,6 +319,7 @@ const interactions = [
     //rui
     Interaction("rui", null, "さあ、クライマックスだ！", ""),
     Interaction(null, "rui", "", "僕がここまで魅せられるなんてね"),
+    Interaction(null, "rui", "", "いいね、僕もノってきたよ！"),
     Interaction("rui", "mizuki", "おや、ずいぶん協力的だね？", "昔馴染みのためだからかな？"),
     Interaction("rui", "mizuki", "さて、行こうか瑞希", "オッケー！ イッツ・ショータイム！"),
     Interaction("mizuki", "rui", "そろそろボクの出番かな？", "僕のことも忘れてもらっては困るよ？"),
@@ -318,6 +337,7 @@ const interactions = [
     //miku_wonder
     Interaction("miku_wonder", "kaito", "この調子で、どんどん盛り上げちゃおー！", "そうだね、みんなならきっとできるよ！"),
     //kanade
+    Interaction("kanade", null, "曲をつかめてきてるね", ""),
     Interaction(null, "kanade", "", "うん、このまま歌い切ろう"),
     Interaction(null, "kanade", "", "うん、いいと思う"),
     Interaction("kanade", "mafuyu", "すごく気持ちのこもった音…", "奏にはそう聞こえるんだね？"),

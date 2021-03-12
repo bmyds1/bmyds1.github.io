@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>プロセカ 掛け合い一覧 (作成中,2021/3/11更新)</title>
+    <title>プロセカ 掛け合い一覧 (作成中,2021/3/12更新)</title>
     <meta name="description" content="プロジェクトセカイのプレイ中に発生する掛け合いをまとめたページです" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="../../js/funcs.js"></script>
@@ -27,7 +27,10 @@
         <b>Option: </b>
         <div id="div_option"></div>
     </form>
-    <table id="table" ontouchstart></table>
+    <div id="div_table">
+        <table id="table" ontouchstart></table>
+        <table id="hoverTable" ontouchstart></table>
+    </div>
     <hr />
     <b>【お詫び】</b>
     <ul>
@@ -37,6 +40,12 @@
     <hr />
     <b>更新履歴</b>
     <ul>
+        <li>
+            2021/3/12<br />
+            デフォルトのセリフをさらに追加<br />
+            (1人につきFrom/To各2つと思っていたが一歌のFromが3つありそう)<br />
+            掛け合いのテキストの表示方法や位置を変更
+        </li>
         <li>
             2021/3/11<br />
             キャラ間に特殊な掛け合いが無い際に起きる「デフォルトのセリフ」の追加を開始<br />
