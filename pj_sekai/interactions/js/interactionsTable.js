@@ -77,6 +77,9 @@ const initInteractionsTable = () => {
                 else {
                     spanInteraction.className = "interactionText interactionTextRight";
                 }
+                if (i == "miku" && j == "miku" && !options.distMiku && options.dispDefaultInteractions) {
+                    spanInteraction.style.bottom = "-300px";
+                }
                 hoverTdEach.appendChild(spanInteraction);
             }
             else {

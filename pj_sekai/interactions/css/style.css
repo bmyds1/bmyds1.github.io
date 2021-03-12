@@ -6,6 +6,7 @@ body {
     position: relative;
     background-color: black;
     display: inline-block;
+    user-select: none;
 }
 
 table {
