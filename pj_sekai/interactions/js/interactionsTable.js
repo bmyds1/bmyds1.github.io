@@ -16,8 +16,10 @@ const initSelect = () => {
 }
 const initInteractionsTable = () => {
     resetElement("table");
+    resetElement("hoverTable");
     const form = document.getElementById("form");
     let table = document.getElementById("table");
+    let hoverTable = document.getElementById("hoverTable");
     let units_from = {};
     for (let c of form["from"]) {
         units_from[c.value] = c.checked;
@@ -35,6 +37,7 @@ const initInteractionsTable = () => {
     let trHead = document.createElement("tr");
     let th00 = document.createElement("th");
     th00.innerText = "From ＼ To";
+    th00.style.backgroundColor = "white";
     trHead.appendChild(th00);
     for (let i in characters_to) {
         let thTo = document.createElement("th");
@@ -47,15 +50,22 @@ const initInteractionsTable = () => {
         trHead.appendChild(thTo);
     }
     table.appendChild(trHead);
+    hoverTable.appendChild(trHead.cloneNode(true));
     for (let i in characters_from) {
         let trRow = document.createElement("tr");
+        let hoverTrRow = document.createElement("tr");
         let thFrom = document.createElement("th");
         thFrom.innerText = characters_from[i].shortName;
         thFrom.style.backgroundColor = units[characters_from[i].unit].color;
         trRow.appendChild(thFrom);
+        let hoverThFrom = thFrom.cloneNode(true);
+        hoverThFrom.style.backgroundColor = "rgba(255,255,255,0)";
+        hoverTrRow.appendChild(hoverThFrom);
         let cNumTmp = 0;
         for (let j in characters_to) {
             let tdEach = document.createElement("td");
+            let hoverTdEach = document.createElement("td");
+            hoverTdEach.className = "tdInteraction hoverTd";
             let interactionTexts = getInteractionTexts(i, j, options);
             if (interactionTexts != null) {
                 tdEach.innerText = "*";
@@ -67,7 +77,7 @@ const initInteractionsTable = () => {
                 else {
                     spanInteraction.className = "interactionText interactionTextRight";
                 }
-                tdEach.appendChild(spanInteraction);
+                hoverTdEach.appendChild(spanInteraction);
             }
             else {
                 tdEach.className = "tdInteraction noInteraction";
@@ -75,11 +85,17 @@ const initInteractionsTable = () => {
             if (isIntersection(i, j)) {
                 tdEach.className = "tdInteraction intersection";
             }
-            trRow.appendChild(tdEach);
+            trRow.appendChild(tdEach)
+            hoverTrRow.appendChild(hoverTdEach);
             ++cNumTmp;
         }
         table.appendChild(trRow);
+        hoverTable.appendChild(hoverTrRow);
     }
+    /*
+    resetElement("hoverTable");
+    document.getElementById("hoverTable").appendChild(table.cloneNode(true));
+    */
     console.log("created!");
 }
 const getCharactersByUnits = (units, options) => {
