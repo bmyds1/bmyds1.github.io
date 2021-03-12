@@ -1,4 +1,6 @@
 const leoEverydayList = [
+    Thumbnail("#2", "https://twitter.com/pj_sekai/status/1370207984274395138",
+        "https://pbs.twimg.com/media/EwP0zRsVoAEAJtK?format=jpg&name=large"),
     Thumbnail("#1", "https://twitter.com/pj_sekai/status/1367037341332688898",
         "https://pbs.twimg.com/media/EvixN0AVoAIEtAK?format=jpg&name=medium")
 ];
