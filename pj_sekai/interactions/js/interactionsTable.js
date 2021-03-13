@@ -12,7 +12,8 @@ const initSelect = () => {
     div_option.appendChild(getCheckboxLabel("option", "distFromTo", "どちらから話しかけたかを区別して表を作成する", true));
     div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", false));
     div_option.appendChild(getCheckboxLabel("option", "dispName", "各キャラクターの一人称も表示する", true));
-    div_option.appendChild(getCheckboxLabel("option", "dispDefaultInteractions", "特殊な関係性が無い場合のセリフも表示する", true));
+    div_option.appendChild(getCheckboxLabel("option", "dispDefaultInteractions", "特殊な掛け合いが無い場合のセリフも表示する", true));
+    div_option.appendChild(getCheckboxLabel("option", "dispRelationNum", "特殊な掛け合いを持つ人数も表示する", false));
 }
 const initInteractionsTable = () => {
     resetElement("table");
@@ -41,13 +42,17 @@ const initInteractionsTable = () => {
     trHead.appendChild(th00);
     for (let i in characters_to) {
         let thTo = document.createElement("th");
-        thTo.classList.add("vertical");
-        let verticalText = document.createElement("span");
-        verticalText.classList.add("verticalText");
-        verticalText.innerText = characters_to[i].shortName;
+        thTo.className = "vertical";
         thTo.style.backgroundColor = units[characters_to[i].unit].color;
-        thTo.appendChild(verticalText);
+        thTo.appendChild(getSpan(characters_to[i].shortName, "verticalText"));
         trHead.appendChild(thTo);
+    }
+    if (options.dispRelationNum) {
+        let thRelationNum = document.createElement("th");
+        thRelationNum.className = "vertical";
+        thRelationNum.style.backgroundColor = "white";
+        thRelationNum.appendChild(getSpan("(人数)", "verticalText"));
+        trHead.appendChild(thRelationNum);
     }
     table.appendChild(trHead);
     hoverTable.appendChild(trHead.cloneNode(true));
@@ -62,6 +67,7 @@ const initInteractionsTable = () => {
         hoverThFrom.style.backgroundColor = "rgba(255,255,255,0)";
         hoverTrRow.appendChild(hoverThFrom);
         let cNumTmp = 0;
+        let iCnt = 0;
         for (let j in characters_to) {
             let tdEach = document.createElement("td");
             let hoverTdEach = document.createElement("td");
@@ -81,6 +87,9 @@ const initInteractionsTable = () => {
                     spanInteraction.style.bottom = "-300px";
                 }
                 hoverTdEach.appendChild(spanInteraction);
+                if (i != j) {
+                    iCnt += 1;
+                }
             }
             else {
                 tdEach.className = "tdInteraction noInteraction";
@@ -88,10 +97,17 @@ const initInteractionsTable = () => {
             if (isIntersection(i, j)) {
                 tdEach.className = "tdInteraction intersection";
             }
-            trRow.appendChild(tdEach)
+            trRow.appendChild(tdEach);
             hoverTrRow.appendChild(hoverTdEach);
             ++cNumTmp;
         }
+        if (options.dispRelationNum) {
+            let tdRelationNum = getTd(iCnt);
+            tdRelationNum.style.backgroundColor = units[characters_from[i].unit].color
+            trRow.appendChild(tdRelationNum);
+            hoverTrRow.appendChild(getTd(""));
+        }
+        console.log(i + ": " + iCnt);
         table.appendChild(trRow);
         hoverTable.appendChild(hoverTrRow);
     }
