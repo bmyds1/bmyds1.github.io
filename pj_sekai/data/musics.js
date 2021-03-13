@@ -1,7 +1,7 @@
 const musics = [
     Music(1, "Tell Your World",
         [
-            Creator("kz", "ttf")
+            Creator("kz", "ttt")
         ],
         [
             Vocal("virtual", ["miku"])
@@ -15,7 +15,7 @@ const musics = [
     ),
     Music(2, "ネクストネスト",
         [
-            Creator("さつき が てんこもり", "ttt")
+            Creator("さつき が てんこもり", "ttf")
         ],
         [
             Vocal("virtual", ["miku"])
@@ -157,8 +157,7 @@ const musics = [
     ),
     Music(11, "Nostalogic",
         [
-            Creator("yuukiss", "ttt"),
-            Creator("rose", "tff")
+            Creator("yuukiss", "ttf")
         ],
         [
             Vocal("virtual", ["meiko"]),
@@ -1062,8 +1061,7 @@ const musics = [
     ),
     Music(67, "ECHO",
         [
-            Creator("Crusher-P", "ttf"),
-            Creator("Circus-P", "ttf")
+            Creator("Crusher P", "ttf")
         ],
         [
             Vocal("virtual", ["gumi"]),
@@ -1148,7 +1146,7 @@ const musics = [
             Creator("wowaka", "ttt")
         ],
         [
-            Vocal("virtual", ["miku"])
+            Vocal("virtual", ["miku", "luka"])
         ],
         mDate(2010, 5, 18),
         mDate(2021, 1, 14),
@@ -1322,7 +1320,7 @@ const musics = [
     ),
     Music(83, "ボッカデラベリタ",
         [
-            Creator("柊キライ", "ttf"),
+            Creator("柊キライ", "ttt"),
         ],
         [
             Vocal("virtual", ["flower"]),
