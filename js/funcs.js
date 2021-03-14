@@ -57,8 +57,8 @@ const getCheckboxLabel = (name, value, text, isChecked = false) => {
     label.appendChild(checkbox);
     let spanText = document.createElement("span");
     spanText.innerText = text;
-    spanText.style.userSelect = "none";
     label.appendChild(spanText);
+    label.className = "unselectable";
     return label;
 }
 const concatElms = (elms, joint) => {

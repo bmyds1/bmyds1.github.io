@@ -1,32 +1,23 @@
-body {
-    font-family: sans-serif;
-}
-
 #div_table {
     position: relative;
     background-color: black;
     display: inline-block;
-    user-select: none;
-    -moz-user-select: none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -webkit-touch-callout: none;
 }
 
-table {
+table.interactionsTable {
     border: solid 1px black;
     border-collapse: collapse;
     max-width: 100%;
     font-size: medium;
 }
 
-table tr, th, td {
+table.interactionsTable tr, table.interactionsTable th, table.interactionsTable td {
     border: solid 1px black;
     text-align: center;
     position: relative;
 }
 
-table th, td {
+table.interactionsTable th, table.interactionsTable td {
     padding: 3px;
 }
 
@@ -44,7 +35,7 @@ th.vertical span.verticalText {
     white-space: nowrap;
 }
 
-td {
+table.interactionsTable td {
     width: 20px;
     height: 20px;
 }
@@ -108,7 +99,7 @@ table#hoverTable {
     z-index: 2;
 }
 
-table#hoverTable tr, th, td {
+table#hoverTable tr, table#hoverTable th, table#hoverTable td {
     border: solid 1px transparent;
 }
 

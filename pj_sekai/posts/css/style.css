@@ -1,7 +1,3 @@
-body {
-    font-family: sans-serif;
-}
-
 table#toc th {
     text-align: left;
 }
@@ -45,8 +41,4 @@ img.youtube {
     margin: 5px 15px;
     padding: 5px 15px;
     background-color: lightblue;
-}
-
-.clear {
-    clear: both;
 }

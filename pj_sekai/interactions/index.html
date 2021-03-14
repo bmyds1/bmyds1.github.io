@@ -5,6 +5,7 @@
     <meta charset="utf-8" />
     <title>プロセカ 掛け合い一覧 (2021/3/14更新)</title>
     <meta name="description" content="プロジェクトセカイのプレイ中に発生する掛け合いをまとめたページです" />
+    <link rel="stylesheet" href="../../css/style.css" />
     <link rel="stylesheet" href="css/style.css" />
     <script src="../../js/funcs.js"></script>
     <script src="../../js/footer.js"></script>
@@ -27,9 +28,9 @@
         <b>Option: </b>
         <div id="div_option"></div>
     </form>
-    <div id="div_table">
-        <table id="table"></table>
-        <table id="hoverTable" ontouchstart></table>
+    <div id="div_table" class="unselectable">
+        <table id="table" class="interactionsTable"></table>
+        <table id="hoverTable" class="interactionsTable" ontouchstart></table>
     </div>
     <hr />
     <b>【掛け合いの仕組み】</b>
