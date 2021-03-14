@@ -154,6 +154,8 @@ const birthdayImgList = [
         "https://pbs.twimg.com/media/EIiVAUzU4AE2zfI?format=png&name=900x900")
 ];
 const anniversaryImgList = [
+    Thumbnail("ホワイトデー(2021/3/14)", "https://twitter.com/pj_sekai/status/1370932775197405184",
+        "https://pbs.twimg.com/media/EwaHk9QVgAMnKUa?format=jpg&name=900x900"),
     Thumbnail("ミクの日(2021/3/9)", "https://twitter.com/pj_sekai/status/1368939605177724928",
         "https://pbs.twimg.com/media/Ev9y7WyUYAQprf_?format=jpg&name=900x900"),
     Thumbnail("バレンタイン(2021/2/14)", "https://twitter.com/pj_sekai/status/1360785914071420928",
