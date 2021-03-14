@@ -107,14 +107,9 @@ const initInteractionsTable = () => {
             trRow.appendChild(tdRelationNum);
             hoverTrRow.appendChild(getTd(""));
         }
-        console.log(i + ": " + iCnt);
         table.appendChild(trRow);
         hoverTable.appendChild(hoverTrRow);
     }
-    /*
-    resetElement("hoverTable");
-    document.getElementById("hoverTable").appendChild(table.cloneNode(true));
-    */
     console.log("created!");
 };
 const getCharactersByUnits = (units, options) => {

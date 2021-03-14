@@ -1,21 +1,17 @@
-body {
-    font-family: sans-serif;
-}
-
-table {
+table.musicsTable {
     border: solid 1px black;
     border-collapse: collapse;
 }
 
-table tr, th, td {
+table.musicsTable tr, table.musicsTable th, table.musicsTable td {
     border: solid 1px black;
 }
 
-table th, td {
+table.musicsTable th, table.musicsTable td {
     padding: 3px 6px;
 }
 
-td.border {
+table.musicsTable td.border {
     font-weight: bold;
     background-color: lightgray;
 }
