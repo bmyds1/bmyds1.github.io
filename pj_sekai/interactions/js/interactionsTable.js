@@ -12,9 +12,9 @@ const initSelect = () => {
     div_option.appendChild(getCheckboxLabel("option", "distFromTo", "どちらから話しかけたかを区別して表を作成する", true));
     div_option.appendChild(getCheckboxLabel("option", "distMiku", "各セカイのミクを区別して表を作成する", false));
     div_option.appendChild(getCheckboxLabel("option", "dispName", "各キャラクターの一人称も表示する", true));
-    div_option.appendChild(getCheckboxLabel("option", "dispDefaultInteractions", "特殊な掛け合いが無い場合のセリフも表示する", true));
-    div_option.appendChild(getCheckboxLabel("option", "dispRelationNum", "特殊な掛け合いを持つ人数も表示する", false));
-}
+    div_option.appendChild(getCheckboxLabel("option", "dispDefaultInteractions", "特定の掛け合いが無い場合のセリフも表示する", true));
+    div_option.appendChild(getCheckboxLabel("option", "dispRelationNum", "特定の掛け合いを持つ人数も表示する", false));
+};
 const initInteractionsTable = () => {
     resetElement("table");
     resetElement("hoverTable");
@@ -116,7 +116,7 @@ const initInteractionsTable = () => {
     document.getElementById("hoverTable").appendChild(table.cloneNode(true));
     */
     console.log("created!");
-}
+};
 const getCharactersByUnits = (units, options) => {
     let arr = {};
     let baseArr = JSON.parse(JSON.stringify(options.distMiku ? characters_interaction : characters));
@@ -126,7 +126,7 @@ const getCharactersByUnits = (units, options) => {
         }
     }
     return arr;
-}
+};
 const getInteractionTexts = (from, to, options) => {
     let arr = [];
     if (options.dispName) {
@@ -175,7 +175,7 @@ const getInteractionTexts = (from, to, options) => {
         return null;
     }
     return arr.join("\n---\n");
-}
+};
 const isIntersection = (from, to) => {
     return (from == to) || (from.match(/^miku/) && to.match(/^miku/));
-}
+};
