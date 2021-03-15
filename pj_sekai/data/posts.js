@@ -46,6 +46,8 @@ const rageList = [
     Thumbnail("第1回大会(2020 Winter)", "https://www.youtube.com/watch?v=P8QTYVL-JS8")
 ];
 const fourFrameList = [ //https://twitter.com/search?q=%23%E3%82%BB%E3%82%AB%E3%82%A4%E3%81%AE4%E3%82%B3%E3%83%9E%20from%3Apj_sekai&src=typed_query&f=live
+    Thumbnail("#36 役者の技", "https://twitter.com/pj_sekai/status/1371295152942157828",
+        "https://pbs.twimg.com/media/EwfRq1cVIAIL6gv?format=jpg&name=medium"),
     Thumbnail("#35 伝わる人物像", "https://twitter.com/pj_sekai/status/1367678756102549506",
         "https://pbs.twimg.com/media/EvryyVOVkAAWRYK?format=jpg&name=4096x4096"),
     Thumbnail("#34 こはねのフィールド", "https://twitter.com/pj_sekai/status/1366591843849302018",
