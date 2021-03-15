@@ -1345,9 +1345,7 @@ const musics = [
         [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm1097445")
         ]
-    )
-];
-const futureMusics = [
+    ),
     Music(85, "威風堂々",
         [
             Creator("梅とら", "ttt")
@@ -1360,12 +1358,15 @@ const futureMusics = [
             Vocal("another", ["kaito"])
         ],
         mDate(2012, 10, 29),
-        null,
+        mDate(2021, 3, 15),
         [
             mURL("原曲", "https://www.nicovideo.jp/watch/sm19233263"),
-            mURL("原曲", "https://www.youtube.com/watch?v=xGNQOqtGU_E")
+            mURL("原曲", "https://www.youtube.com/watch?v=xGNQOqtGU_E"),
+            mURL("3DMV", "https://www.youtube.com/watch?v=KvnS-TCq05Y")
         ]
-    ),
+    )
+];
+const futureMusics = [
     Music(86, "from Y to Y",
         [
             Creator("ジミーサムP", "ttf")
