@@ -2,6 +2,10 @@ body {
     font-family: sans-serif;
 }
 
+summary {
+    outline: none;
+}
+
 .unselectable {
     user-select: none;
     -moz-user-select: none;
